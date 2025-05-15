@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>some text</h1>
+    <h2>some text 2</h2>
+    <h3>some text 3</h3>
+    <h4>some text 4</h4>
+    <button class="button-filled">More Articles</button>
+    <button class="button-outline">More Articles</button>
+    <button class="button-filled-icon button-filled-icon--right">
+      More Articles
+      <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+    </button>
+    <button class="button-filled-icon button-filled-icon--left">
+      <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+      More Articles
+    </button>
+    <button class="button-filled-next">
+      <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+    </button>
+
+    <button class="button-outline-next">
+      <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+    </button>
+    <br />
+    <div class="test-bg">
+      <button class="button-white">More Articles</button>
+      <div class="dropdown">
+        <button class="dropdown-toggle button-white">
+          <span>More Articles</span>
+          <svg><use href="./img/sprite.svg#button-white-bottom-icon" /></svg>
+        </button>
+        <ul class="dropdown-menu">
+          <li data-value="1">HTML</li>
+          <li data-value="2">CSS</li>
+          <li data-value="3">JavaScript</li>
+          <li data-value="4">React</li>
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

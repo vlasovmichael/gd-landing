@@ -1,0 +1,180 @@
+body {
+  font-family: "Lexend", sans-serif;
+
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  // color: $color-grey-dark;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-family: 5rem;
+    }
+    /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+button.button-filled {
+  @include button;
+
+  background-color: $color-primary;
+  color: $color-white;
+  border: 0;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+button.button-outline {
+  @include button;
+
+  background-color: $color-white;
+  color: $color-primary;
+  border: 1px solid $color-primary;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
+
+button.button-filled-icon {
+  @include button;
+
+  background-color: $color-primary;
+  color: $color-white;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+
+  &:active {
+    background-color: $color-primary-light;
+    color: $color-primary;
+  }
+
+  &--right svg {
+    margin-left: 1rem;
+  }
+
+  &--left svg {
+    margin-right: 1rem;
+  }
+}
+
+button.button-filled-next {
+  @include button-icon;
+
+  background-color: $color-primary;
+  color: $color-white;
+  border: 0;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+button.button-outline-next {
+  @include button-icon;
+
+  background-color: $color-white;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
+
+button.button-white {
+  border: 1px solid $color-white;
+  font-weight: 600;
+  font-size: 0.875rem; // 14px
+  color: $color-white;
+  padding: 0.5rem 1.08rem;
+  border-radius: 100px;
+  background: rgba($color-white, 0.1);
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  svg {
+    fill: currentColor;
+    width: 0.8rem;
+    height: 0.6rem;
+    margin-left: 0.5rem;
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
+  }
+}
+
+.test-bg {
+  background-color: $color-grey-3;
+  padding: 3rem;
+  height: 1000px;
+}
