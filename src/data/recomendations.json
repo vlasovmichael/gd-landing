@@ -1,0 +1,98 @@
+[
+    {
+        "src": "./src/img/recomendations-1.jpg",
+        "alt": "Recomendations house",
+        "labelText": "Popular",
+        "labelType": "danger",
+        "header": "roselands house",
+        "price": "35.000.000",
+        "avatarImg": "./src/img/avatar-1.png",
+        "avatarAlt": "Avatar",
+        "authorName": "dianne russell",
+        "authorLocation": "manchester, kentucky"
+    },
+    {
+        "src": "./src/img/recomendations-2.jpg",
+        "alt": "Recomendations house",
+        "labelText": "New house",
+        "labelType": "info",
+        "header": "woodlandside",
+        "price": "20.000.000",
+        "avatarImg": "./src/img/avatar-2.png",
+        "avatarAlt": "Avatar",
+        "authorName": "robert fox",
+        "authorLocation": "dr. san jose, south dakota"
+    },
+    {
+        "src": "./src/img/recomendations-3.jpg",
+        "alt": "Recomendations house",
+        "labelText": "Best deals",
+        "labelType": "success",
+        "header": "The old lighthouse",
+        "price": "44.000.000",
+        "avatarImg": "./src/img/avatar-3.png",
+        "avatarAlt": "Avatar",
+        "authorName": "ronald richards",
+        "authorLocation": "santa ana, illinois"
+    },
+    {
+        "src": "./src/img/recomendations-4.jpg",
+        "alt": "Recomendations house",
+        "labelText": "Popular",
+        "labelType": "danger",
+        "header": "Cosmo's house",
+        "price": "22.000.000",
+        "avatarImg": "./src/img/avatar-4.png",
+        "avatarAlt": "Avatar",
+        "authorName": "jenny wilson",
+        "authorLocation": "preston rd. ingewood, maine 98380"
+    },
+    {
+        "src": "./src/img/recomendations-1.jpg",
+        "alt": "Recomendations house",
+        "labelText": "Popular",
+        "labelType": "danger",
+        "header": "roselands house",
+        "price": "35.000.000",
+        "avatarImg": "./src/img/avatar-1.png",
+        "avatarAlt": "Avatar",
+        "authorName": "dianne russell",
+        "authorLocation": "manchester, kentucky"
+    },
+    {
+        "src": "./src/img/recomendations-2.jpg",
+        "alt": "Recomendations house",
+        "labelText": "New house",
+        "labelType": "info",
+        "header": "woodlandside",
+        "price": "20.000.000",
+        "avatarImg": "./src/img/avatar-2.png",
+        "avatarAlt": "Avatar",
+        "authorName": "robert fox",
+        "authorLocation": "dr. san jose, south dakota"
+    },
+    {
+        "src": "./src/img/recomendations-3.jpg",
+        "alt": "Recomendations house",
+        "labelText": "Best deals",
+        "labelType": "success",
+        "header": "The old lighthouse",
+        "price": "44.000.000",
+        "avatarImg": "./src/img/avatar-3.png",
+        "avatarAlt": "Avatar",
+        "authorName": "ronald richards",
+        "authorLocation": "santa ana, illinois"
+    },
+    {
+        "src": "./src/img/recomendations-4.jpg",
+        "alt": "Recomendations house",
+        "labelText": "Popular",
+        "labelType": "danger",
+        "header": "Cosmo's house",
+        "price": "22.000.000",
+        "avatarImg": "./src/img/avatar-4.png",
+        "avatarAlt": "Avatar",
+        "authorName": "jenny wilson",
+        "authorLocation": "preston rd. ingewood, maine 98380"
+    }
+]

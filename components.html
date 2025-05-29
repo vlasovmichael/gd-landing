@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>GD Landing</title>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <button class="button-filled">More Articles</button>
+    <button class="button-outline">More Articles</button>
+    <button class="button-filled-icon button-filled-icon--right">
+      More Articles
+      <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+    </button>
+    <button class="button-filled-icon button-filled-icon--left">
+      <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+      More Articles
+    </button>
+    <button class="button-filled-next">
+      <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+    </button>
+
+    <button class="button-outline-next">
+      <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+    </button>
+    <br />
+    <!--  -->
+    <a href="#" class="button-filled">More Articles</a>
+    <a href="#" class="button-outline">More Articles</a>
+    <a href="#" class="button-filled-icon button-filled-icon--right">
+      More Articles
+      <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+    </a>
+    <a href="#" class="button-filled-icon button-filled-icon--left">
+      <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+      More Articles
+    </a>
+
+    <!--  -->
+    <div class="test-bg">
+      <button class="button-white">More Articles</button>
+      <a href="#" class="button-white">More Articles HREF</a>
+      <div class="dropdown">
+        <button class="dropdown-toggle button-white">
+          <span>More Articles</span>
+          <svg>
+            <use href="./img/sprite.svg#button-white-bottom-icon" />
+          </svg>
+        </button>
+        <ul class="dropdown-menu">
+          <li data-value="1">HTML</li>
+          <li data-value="2">CSS</li>
+          <li data-value="3">JavaScript</li>
+          <li data-value="4">React</li>
+        </ul>
+      </div>
+      <br />
+      <form novalidate class="form">
+        <input
+          type="email"
+          class="form__input default-input"
+          placeholder="Your email here"
+        />
+        <span class="form__error">Field error. Please fix it</span>
+      </form>
+      <form class="form form--complex">
+        <svg class="form--complex__location-icon">
+          <use href="./img/sprite.svg#location-icon" />
+        </svg>
+        <input
+          type="text"
+          class="default-input form--complex__input"
+          placeholder="Search for the location you want!"
+        />
+        <button class="button-filled-icon button-filled-icon--right">
+          Search
+          <svg><use href="./img/sprite.svg#button-white-right-icon" /></svg>
+        </button>
+      </form>
+      <select class="form__input js-choice" required>
+        <option value="">Select</option>
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JavaScript</option>
+        <option value="">React</option>
+      </select>
+      <form class="form">
+        <textarea
+          id="textarea"
+          class="default-input form__textarea"
+          name="textarea"
+          maxlength="500"
+          placeholder="Textarea"
+        ></textarea>
+        <div class="form__counter"><span id="charCount">0</span>/500</div>
+      </form>
+      <!--  -->
+      <address class="author">
+        <img src="./src/img/avatar-1.png" alt="Avatar" class="author__photo" />
+        <h6 class="author__name">jenny wilson</h6>
+        <p class="author__location">preston rd. ingewood, maine 98380</p>
+      </address>
+      <address class="author author--rating">
+        <img src="./src/img/avatar-1.png" alt="Avatar" class="author__photo" />
+        <h6 class="author__name">jenny wilson</h6>
+        <p class="author__location">preston rd. ingewood, maine 98380</p>
+        <div class="author__rating">
+          <svg><use href="#icon-rating" /></svg>
+          <span class="author__value">4.6</span>
+        </div>
+      </address>
+      <!--  -->
+      <label class="custom-checkbox">
+        <input type="checkbox" class="custom-checkbox__input" />
+        <span class="custom-checkbox__checkmark"></span>
+        I give consent to the processing of my personal data given in the
+        contact form above under the terms and conditions of Grid Dynamics
+        Privacy Policy.
+      </label>
+      <!-- Labels -->
+      <div>
+        <div class="label label--danger">
+          <svg class="label__icon">
+            <use href="./img/sprite.svg#label-danger" />
+          </svg>
+          <span class="label__text">Popular</span>
+        </div>
+        <div class="label label--info">
+          <svg class="label__icon">
+            <use href="./img/sprite.svg#label-info" />
+          </svg>
+          <span class="label__text">New house</span>
+        </div>
+        <div class="label label--success">
+          <svg class="label__icon">
+            <use href="./img/sprite.svg#label-success" />
+          </svg>
+          <span class="label__text">Best deals</span>
+        </div>
+      </div>
+      <!-- Labels -->
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

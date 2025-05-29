@@ -1,96 +1,145 @@
-// .btn {
-//   &,
-//   &:link,
-//   &:visited {
-//     text-transform: uppercase;
-//     text-decoration: none;
-//     padding: 1.5rem 4rem;
-//     display: inline-block;
-//     border-radius: 10rem;
-//     transition: all 0.2s;
-//     position: relative;
-//     font-size: $default-font-size;
+@mixin button {
+  padding: 0.75rem 1.751rem;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
 
-//     //Change for the <button> element
-//     border: none;
-//     cursor: pointer;
-//   }
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 
-//   &:hover {
-//     transform: translateY(-3px);
-//     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  svg {
+    fill: currentColor;
+    width: 1rem;
+    height: 0.875rem;
+  }
+}
 
-//     &::after {
-//       transform: scaleX(1.4) scaleY(1.6);
-//       opacity: 0;
-//     }
-//   }
+@mixin button-icon {
+  border-radius: 50%;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
 
-//   &:active,
-//   &:focus {
-//     outline: none;
-//     transform: translateY(-1px);
-//     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-//   }
+  svg {
+    fill: currentColor;
+    width: 1rem;
+    height: 0.875rem;
+  }
+}
 
-//   &--white {
-//     background-color: $color-white;
-//     // color: $color-grey-dark;
+.button-filled {
+  @include button;
 
-//     &::after {
-//       background-color: $color-white;
-//     }
-//   }
+  background-color: $color-primary;
+  color: $color-white;
+  border: 0;
 
-//   &--green {
-//     background-color: $color-primary;
-//     color: $color-white;
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
 
-//     &::after {
-//       background-color: $color-primary;
-//     }
-//   }
+.button-outline {
+  @include button;
 
-//   &::after {
-//     content: "";
-//     display: inline-block;
-//     height: 100%;
-//     width: 100%;
-//     border-radius: 10rem;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: -1;
-//     transition: all 0.4s;
-//   }
+  background-color: $color-white;
+  color: $color-primary;
+  border: 1px solid $color-primary;
+  padding: 0.6875rem 1.751rem;
 
-//   &--animated {
-//     animation: moveInBottom 0.5s ease-out 0.75s;
-//     animation-fill-mode: backwards;
-//   }
-// }
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
 
-// .btn-text {
-//   &:link,
-//   &:visited {
-//     font-size: $default-font-size;
-//     color: $color-primary;
-//     display: inline-block;
-//     text-decoration: none;
-//     border-bottom: 1px solid $color-primary;
-//     padding: 3px;
-//     transition: all 0.2s;
-//   }
+.button-filled-icon {
+  @include button;
 
-//   &:hover {
-//     background-color: $color-primary;
-//     color: $color-white;
-//     box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-//     transform: translateY(-2px);
-//   }
+  background-color: $color-primary;
+  color: $color-white;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
 
-//   &:active {
-//     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
-//     transform: translateY(0);
-//   }
-// }
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+
+  &:active {
+    background-color: $color-primary-light;
+    color: $color-primary;
+  }
+
+  &--right svg {
+    margin-left: 1.5rem;
+  }
+
+  &--left svg {
+    margin-right: 1.5rem;
+  }
+}
+
+.button-filled-next {
+  @include button-icon;
+
+  background-color: $color-primary;
+  color: $color-white;
+  border: 0;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+.button-outline-next {
+  @include button-icon;
+
+  background-color: $color-white;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+.button-outline-prev {
+  @extend .button-outline-next;
+}
+
+.button-white {
+  @include button;
+
+  border: 1px solid $color-white;
+  color: $color-white;
+  padding: 0.25rem 1.058rem;
+  background-color: rgba($color-white, 0.1);
+
+  svg {
+    fill: currentColor;
+    width: 0.8rem;
+    height: 0.6rem;
+    margin-left: 0.5rem;
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+    background-color: rgba($color-white, 0.2);
+  }
+}

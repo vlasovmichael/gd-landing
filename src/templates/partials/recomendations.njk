@@ -1,0 +1,167 @@
+<section class="recomendations">
+  <div class="container">
+    <div class="recomendations__header">
+      <h2>Featured House</h2>
+      <div class="recomendations__tab-container">
+        <button
+          class="button-outline recomendations__tab recomendations__tab--1 recomendations__tab--active"
+          data-tab="1"
+        >
+          <svg><use href="#tabs-home" /></svg>
+          House
+        </button>
+        <button
+          class="button-outline recomendations__tab recomendations__tab--2"
+          data-tab="2"
+        >
+          <svg><use href="#tabs-villa" /></svg>
+
+          Villa
+        </button>
+        <button
+          class="button-outline recomendations__tab recomendations__tab--3"
+          data-tab="3"
+        >
+          <svg><use href="#tabs-apartment" /></svg>
+          Apartment
+        </button>
+      </div>
+      <div class="slider-nav">
+        <button class="button-outline-prev slider__btn slider__btn--left">
+          <svg><use href="#button-white-left-icon" /></svg>
+        </button>
+        <button class="button-outline-next slider__btn slider__btn--right">
+          <svg><use href="#button-white-right-icon" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="slider-outer">
+      <div class="slider-inner">
+        <div
+          class="recomendations__content recomendations__content--1 recomendations__content--active"
+        >
+          <!-- 1 -->
+          <div class="splide">
+          <div class="splide__track">
+            <ul class="recomendations__carousel splide__list">
+              {% for item in recomendations %}
+                <li class="recomendations__item splide__slide">
+                  <a href="#" class="recomendations__link">
+                    <div class="recomendations__image">
+                      <img
+                        src="{{ item.src }}"
+                        alt="{{ item.alt }}"
+                      />
+                      <div class="label label--{{ item.labelType }}">
+                        <svg class="label__icon">
+                          <use href="#label-{{ item.labelType }}" />
+                        </svg>
+                        <span class="label__text">{{ item.labelText }}</span>
+                      </div>
+                    </div>
+                    <div class="recomendations__meta">
+                      <h3 class="recomendations__title">{{ item.header }}</h3>
+                      <span class="recomendations__price"> $ {{ item.price }}</span>
+                      <address class="author">
+                        <img
+                          src="{{ item.avatarImg }}"
+                          alt="{{ item.avatarAlt }}"
+                          class="author__photo"
+                        />
+                        <h6 class="author__name">{{ item.authorName }}</h6>
+                        <p class="author__location">{{ item.authorLocation }}</p>
+                      </address>
+                    </div>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div class="recomendations__content recomendations__content--2">
+          <!-- 2 -->
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="recomendations__carousel splide__list">
+                {% for item in recomendations %}
+                  <li class="recomendations__item splide__slide">
+                    <a href="#" class="recomendations__link">
+                      <div class="recomendations__image">
+                        <img
+                          src="{{ item.src }}"
+                          alt="{{ item.alt }}"
+                        />
+                        <div class="label label--{{ item.labelType }}">
+                          <svg class="label__icon">
+                            <use href="#label-{{ item.labelType }}" />
+                          </svg>
+                          <span class="label__text">{{ item.labelText }}</span>
+                        </div>
+                      </div>
+                      <div class="recomendations__meta">
+                        <h3 class="recomendations__title">{{ item.header }}</h3>
+                        <span class="recomendations__price"> $ {{ item.price }}</span>
+                        <address class="author">
+                          <img
+                            src="{{ item.avatarImg }}"
+                            alt="{{ item.avatarAlt }}"
+                            class="author__photo"
+                          />
+                          <h6 class="author__name">{{ item.authorName }}</h6>
+                          <p class="author__location">{{ item.authorLocation }}</p>
+                        </address>
+                      </div>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="recomendations__content recomendations__content--3">
+          <!-- 3 -->
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="recomendations__carousel splide__list">
+                {% for item in recomendations %}
+                  <li class="recomendations__item splide__slide">
+                    <a href="#" class="recomendations__link">
+                      <div class="recomendations__image">
+                        <img
+                          src="{{ item.src }}"
+                          alt="{{ item.alt }}"
+                        />
+                        <div class="label label--{{ item.labelType }}">
+                          <svg class="label__icon">
+                            <use href="#label-{{ item.labelType }}" />
+                          </svg>
+                          <span class="label__text">{{ item.labelText }}</span>
+                        </div>
+                      </div>
+                      <div class="recomendations__meta">
+                        <h3 class="recomendations__title">{{ item.header }}</h3>
+                        <span class="recomendations__price"> $ {{ item.price }}</span>
+                        <address class="author">
+                          <img
+                            src="{{ item.avatarImg }}"
+                            alt="{{ item.avatarAlt }}"
+                            class="author__photo"
+                          />
+                          <h6 class="author__name">{{ item.authorName }}</h6>
+                          <p class="author__location">{{ item.authorLocation }}</p>
+                        </address>
+                      </div>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

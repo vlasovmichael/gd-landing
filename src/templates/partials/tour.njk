@@ -1,0 +1,87 @@
+<section class="tour">
+  <div class="container">
+    <div class="tour__content">
+      <h2>Let’s tour and see our house!</h2>
+      <p>
+        Houses recommended by our partners that have been curated to become
+        the home of your dreams!
+      </p>
+      <div class="tour__details">
+        <span>House Detail</span>
+        <ul>
+          {% for detail in details %}
+            <li>
+              <svg><use href="#icon-tour-{{ detail.icon }}" /></svg>
+              <span>{{ detail.text }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <footer class="author author--advanced">
+        <img
+          src="./src/img/avatar-1.png"
+          alt="Avatar"
+          class="author__photo"
+        />
+        <h6 class="author__name">jenny wilson</h6>
+        <p class="author__location">manager director</p>
+        <div class="author__button">
+          <button class="button-filled-icon button-filled-icon--left">
+            <svg><use href="#icon-phone" /></svg>
+            contact now
+          </button>
+        </div>
+      </footer>
+    </div>
+    <div class="tour__slider">
+      <!-- Main slider -->
+      <div id="tour-slider-main" class="splide tour__slider-main">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li
+              class="splide__slide"
+              data-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              data-type="video"
+              data-micromodal-trigger="modal-media"
+            >
+              <img src="./src/img/tour-main-1.png" alt="Preview 1" />
+              <svg><use href="#icon-play" /></svg>
+            </li>
+            <li
+              class="splide__slide"
+              data-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              data-type="video"
+              data-micromodal-trigger="modal-media"
+            >
+              <img src="https://picsum.photos/800" alt="Preview 2" />
+              <svg><use href="#icon-play" /></svg>
+            </li>
+            <li
+              class="splide__slide"
+              data-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              data-type="video"
+              data-micromodal-trigger="modal-media"
+            >
+              <img src="https://picsum.photos/id/1/800" alt="Preview 3" />
+              <svg><use href="#icon-play" /></svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Thumbnails -->
+      <div id="tour-slider-thumbnail" class="splide tour__slider-thumbnail">
+        <div class="splide__track">
+          {% set numbers = [1, 2, 3] %}
+          <ul class="splide__list">
+            {% for i in numbers %}
+            <li class="splide__slide">
+              <img src="./src/img/tour-thumbs-{{ i }}.jpg" alt="Thumbnail {{ i }}" />
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

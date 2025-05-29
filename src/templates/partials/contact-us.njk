@@ -1,0 +1,91 @@
+<section class="contact-us">
+  <div class="container">
+    <div class="contact-us__content contact-us__area">
+      <h3>Would you like to join?</h3>
+      <p>
+        Quickly get three quotes from these local that people love in online
+        reviews.
+      </p>
+      <p>Pick the whose estimate suits you best.</p>
+      <p>We then make sure the work i done to your complete satisfaction.</p>
+      <img src="./src/img/contact-us.svg" alt="Contact us" />
+    </div>
+    <div class="contact-us__form contact-us__area">
+      <form novalidate class="form">
+        <div class="contact-us__row">
+          <div class="contact-us__col">
+            <label class="contact-us__label" for="form-name">Name</label>
+          </div>
+          <div class="contact-us__col">
+            <input
+              type="text"
+              id="form-name"
+              class="default-input"
+              placeholder="Your name"
+            />
+          </div>
+        </div>
+        <!--  -->
+        <div class="contact-us__row">
+          <div class="contact-us__col">
+            <label class="contact-us__label" for="form-surname">Surname</label>
+          </div>
+          <div class="contact-us__col">
+            <input
+              type="text"
+              id="form-surname"
+              class="default-input"
+              placeholder="Your Surname"
+            />
+          </div>
+        </div>
+        <!--  -->
+        <div class="contact-us__row">
+          <div class="contact-us__col">
+            <label class="contact-us__label" for="form-education"
+              >Education</label
+            >
+          </div>
+          <div class="contact-us__col">
+            <select id="form-education" class="form__input js-choice" required>
+              <option value="">Select One</option>
+              <option value="">HTML</option>
+              <option value="">CSS</option>
+              <option value="">JavaScript</option>
+              <option value="">React</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="contact-us__row contact-us__row--message">
+          <div class="contact-us__col">
+            <label class="contact-us__label" for="form-message">Message</label>
+          </div>
+          <div class="contact-us__col">
+            <textarea
+              id="form-message"
+              class="default-input form__textarea"
+              name="textarea"
+              maxlength="500"
+              placeholder="Textarea"
+            ></textarea>
+            <div class="form__counter"><span id="charCount">0</span>/500</div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="contact-us__row">
+          <div class="contact-us__col"></div>
+          <div class="contact-us__col">
+            <label class="custom-checkbox">
+              <input type="checkbox" class="custom-checkbox__input" />
+              <span class="custom-checkbox__checkmark"></span>
+              I give consent to the processing of my personal data given in the
+              contact form above under the terms and conditions of Grid Dynamics
+              Privacy Policy.
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

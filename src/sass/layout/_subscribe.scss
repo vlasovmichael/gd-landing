@@ -1,0 +1,31 @@
+.subscribe {
+  margin-bottom: 5rem;
+
+  h2 {
+    max-width: 28rem;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &__bg {
+    background-image: image-set(
+      url("./img/subscribe-bg@1x.jpg") 1x,
+      url("./img/subscribe-bg@2x.jpg") 2x
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    min-height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form {
+    max-width: 31rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+}

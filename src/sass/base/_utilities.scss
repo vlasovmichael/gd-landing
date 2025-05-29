@@ -1,21 +1,16 @@
-.u-center-text { text-align: center !important; }
+.loader {
+  width: 24px;
+  height: 24px;
+  border: 3px solid $color-white;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  display: none;
+  margin-left: 1rem;
 
-.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
-.u-margin-bottom-medium {
-    margin-bottom: 4rem !important;
-
-    @include respond(tab-port) {
-        margin-bottom: 3rem !important;
-    }
+  &.is-visible {
+    display: block;
+  }
 }
-
-.u-margin-bottom-big { 
-    margin-bottom: 8rem !important;
-
-    @include respond(tab-port) {
-        margin-bottom: 5rem !important;
-    }
-}
-
-.u-margin-top-big { margin-top: 8rem !important; }
-.u-margin-top-huge { margin-top: 10rem !important; }

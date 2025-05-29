@@ -1,0 +1,29 @@
+<li class="articles__item">
+  <div class="articles__image">
+    <img
+      src="{{ article.image }}"
+      alt="{{ article.title }}"
+      class="articles__img"
+    />
+  </div>
+  <div class="articles__content">
+    <address class="author">
+      <img
+        src="{{ article.authorAvatar }}"
+        alt="Avatar"
+        class="author__photo"
+      />
+      <h6 class="author__name">{{ article.authorName }}</h6>
+    </address>
+    <h5 class="articles__title">{{ article.title }}</h5>
+    <p class="articles__description" style="display: none">
+      {{ article.content }}
+    </p>
+    <footer class="articles__footer">
+      <svg><use href="#icon-time" /></svg>
+      <span class="articles__meta"
+        >{{ article.timeToRead }} min read | {{ article.date }}</span
+      >
+    </footer>
+  </div>
+</li>

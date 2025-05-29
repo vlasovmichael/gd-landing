@@ -1,0 +1,45 @@
+<section class="find-more">
+  <div class="container">
+    <h2>Find out more about selling and buying homes</h2>
+    <button id="load-more" class="button-filled find-more__button">
+      more articles
+      <span id="articles-loader" class="loader"></span>
+    </button>
+    <div class="find-more__content">
+      <ul class="articles" id="articles-list">
+        {% for article in articles.slice(0, 3) %} {% include
+        "partials/article.njk" %} {% endfor %}
+      </ul>
+      <div class="featured-article" id="featured-article">
+        {% set first = articles[0] %}
+        <div class="featured is-visible">
+          <div class="articles__image">
+            <img
+              src="{{ first.image }}"
+              alt="{{ first.title }}"
+              class="articles__img"
+            />
+          </div>
+          <div class="articles__content">
+            <address class="author">
+              <img
+                src="{{ first.authorAvatar }}"
+                alt="Avatar"
+                class="author__photo"
+              />
+              <h6 class="author__name">{{ first.authorName }}</h6>
+            </address>
+            <h3 class="articles__title">{{ first.title }}</h3>
+            <p class="articles__description">{{ first.content }}</p>
+            <footer class="articles__footer">
+              <svg><use href="#icon-time" /></svg>
+              <span class="articles__meta"
+                >{{ first.timeToRead }} min read | {{ first.date }}</span
+              >
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

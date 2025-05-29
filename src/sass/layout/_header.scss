@@ -1,3 +1,62 @@
+.header {
+  position: relative;
+  padding: 2.44rem 0;
+  margin-bottom: 3.4rem;
+
+  &:before {
+    content: "";
+    background: url("../../img/hero-bg.svg") no-repeat left top;
+    width: 35.5rem;
+    height: 22.5625rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &:after {
+    content: "";
+    background: url("../../img/hero-house.png") no-repeat right top;
+    background-image: image-set(
+      url("../../img/hero-house.png") 1x,
+      url("../../img/hero-house@2x.png") 2x,
+      url("../../img/hero-house@3x.png") 3x
+    );
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45rem;
+    height: 45rem;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    z-index: -1;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-right: 1.8rem;
+  }
+
+  &__nav-link {
+    min-width: 6.375rem;
+  }
+
+  &__logo-icon {
+    height: 36px;
+    width: 115px;
+  }
+}
 // .header {
 //     height: 85vh;
 //     background-image: linear-gradient(

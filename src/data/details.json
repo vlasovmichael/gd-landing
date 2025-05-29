@@ -1,0 +1,18 @@
+[
+    {
+        "icon": "bed",
+        "text": "4 Bedrooms"
+    },
+    {
+        "icon": "bath",
+        "text": "2 Bathrooms"
+    },
+    {
+        "icon": "car",
+        "text": "1 Carport"
+    },
+    {
+        "icon": "floor",
+        "text": "2 Floors"
+    }
+]

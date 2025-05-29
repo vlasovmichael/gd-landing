@@ -1,4 +1,3 @@
-@import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
@@ -7,19 +6,21 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/bg-video";
 @import "components/button";
-@import "components/card";
-@import "components/composition";
-@import "components/feature-box";
-@import "components/form";
-@import "components/popup";
-@import "components/story";
 @import "components/dropdown";
+@import "components/input";
+@import "components/select";
+@import "components/labels";
+@import "components/author";
+@import "components/modal";
 
 @import "layout/footer";
-@import "layout/grid";
 @import "layout/header";
-@import "layout/navigation";
-
-@import "pages/home";
+@import "layout/hero";
+@import "layout/recomendations";
+@import "layout/cookies";
+@import "layout/contact-us";
+@import "layout/testimonials";
+@import "layout/subscribe";
+@import "layout/tour";
+@import "layout/find-more";

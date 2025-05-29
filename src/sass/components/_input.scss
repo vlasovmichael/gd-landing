@@ -1,0 +1,125 @@
+.default-input {
+  border: 1px solid $color-grey-1;
+  color: $color-grey-2;
+  font: 500 0.875rem/1.5 "Lexend", sans-serif;
+  border-radius: 28px;
+  color: $color-black;
+  height: 56px;
+  width: 100%;
+  background-color: $color-white;
+  padding: 0 1rem;
+  transition: all 0.2s ease;
+
+  &:focus {
+    outline: none;
+    border-color: $color-grey-2;
+  }
+
+  &::placeholder {
+    color: $color-grey-2;
+  }
+}
+
+.form {
+  position: relative;
+  margin-bottom: 1rem;
+
+  &__input:invalid {
+    border-color: $color-danger;
+
+    + .form__error {
+      display: block;
+    }
+  }
+
+  &--complex {
+    &__location-icon {
+      position: absolute;
+      left: 25px;
+      top: 17px;
+      width: 18px;
+      height: 22px;
+    }
+
+    &__input {
+      padding-left: 3.9rem;
+      padding-right: 10rem;
+    }
+
+    button {
+      position: absolute;
+      right: 4px;
+      top: 4px;
+    }
+  }
+
+  &__error {
+    color: $color-danger;
+    font-size: 0.75rem;
+    margin-left: 2rem;
+    display: none;
+  }
+
+  &__textarea {
+    resize: none;
+    height: 144px;
+    padding: 1.5rem 1rem;
+  }
+
+  &__counter {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 0.75rem;
+    color: $color-grey-2;
+  }
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked + .custom-checkbox__checkmark {
+      background-color: $color-primary;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__checkmark {
+    height: 24px;
+    width: 24px;
+    background-color: $color-white;
+    border: 1px solid $color-primary;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 5px;
+      width: 16px;
+      height: 12px;
+      background: url("../img/checked.svg") no-repeat center center;
+      opacity: 0;
+      transition: all 0.2s ease;
+    }
+  }
+}

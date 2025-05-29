@@ -1,0 +1,53 @@
+.cookies {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0.607rem 2rem;
+  background-color: $color-primary-light;
+  color: $color-primary-dark;
+  border-radius: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 465px;
+  margin: 0 auto;
+  transition: 0.3s all ease;
+  transform: translateY(200%);
+
+  &.is-visible {
+    transform: translateY(0);
+  }
+
+  &.is-hidden {
+    transform: translateY(200%);
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    margin-right: 1rem;
+  }
+
+  &__button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 0.3rem;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      stroke: $color-black;
+      transition: 0.2s all ease;
+    }
+
+    &:hover svg {
+      stroke: $color-grey-3;
+      transform: scale(1.1) rotate(90deg);
+    }
+  }
+}
