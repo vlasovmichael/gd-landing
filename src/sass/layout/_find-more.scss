@@ -1,7 +1,9 @@
 .featured {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
 
   &.is-visible {
     opacity: 1;
@@ -10,7 +12,21 @@
 }
 
 .find-more {
-  margin-bottom: 6rem;
+  margin-bottom: 7.5rem;
+  position: relative;
+
+  @include respond(phone) {
+    margin-bottom: 4rem;
+  }
+
+  &__bg-img {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 35%;
+    height: 58.4375rem;
+    z-index: -1;
+  }
 
   h2 {
     text-align: center;
@@ -18,17 +34,25 @@
     margin: 0 auto 1rem;
   }
 
+  .sub-header-vertical h6 {
+    margin-bottom: 0.3125rem;
+  }
+
   &__content {
     display: flex;
     margin-top: 2.9rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
 
     .author {
       margin-top: 0.6rem;
       margin-bottom: 0.7rem;
 
       &__photo {
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
       }
 
       &__name {
@@ -42,6 +66,7 @@
   &__button {
     margin: 0 auto;
     display: flex;
+    transition: width 0.2s ease;
   }
 }
 
@@ -53,6 +78,10 @@
   &__item {
     display: flex;
     cursor: pointer;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
 
     &:not(:last-child) {
       margin-bottom: 2rem;
@@ -80,6 +109,11 @@
     flex: none;
     position: relative;
 
+    @include respond(phone) {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+
     &:before {
       content: "";
       position: absolute;
@@ -87,7 +121,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      border-radius: 16px;
+      border-radius: $border-radius;
       background-color: rgba(255, 255, 255, 0.35);
       opacity: 0;
       transition: all 0.2s ease;
@@ -98,8 +132,13 @@
     width: 100%;
     max-width: 12.5rem;
     height: 9.25rem;
-    border-radius: 16px;
+    border-radius: $border-radius;
     display: block;
+
+    @include respond(phone) {
+      max-width: 100%;
+      height: 100%;
+    }
   }
 
   &__footer {
@@ -107,8 +146,8 @@
     align-items: center;
 
     svg {
-      width: 20px;
-      height: 20px;
+      width: 1.25rem;
+      height: 1.25rem;
       margin-right: 1rem;
     }
   }
@@ -136,6 +175,12 @@
   margin-left: 1.9rem;
   flex: none;
 
+  @include respond(phone) {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
   .articles {
     &__image {
       margin-right: 0;
@@ -149,6 +194,10 @@
     &__img {
       max-width: 100%;
       height: 17.5rem;
+
+      @include respond(phone) {
+        height: 100%;
+      }
     }
 
     &__description {

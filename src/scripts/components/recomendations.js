@@ -22,13 +22,20 @@ function initSplide(tabId) {
     type: "slide",
     perPage: 3,
     autoWidth: true,
-    // perMove: 1,
-    // gap: "2rem",
     padding: {
       right: "1rem",
     },
     arrows: false,
     pagination: false,
+    breakpoints: {
+      640: {
+        perPage: 1,
+        autoWidth: false,
+        padding: {
+          right: 0,
+        },
+      },
+    },
   });
 
   splide.mount();

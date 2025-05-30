@@ -9,6 +9,10 @@ safeInit("#testimonial-slider", (carousel) => {
     padding: "24%",
     gap: "1.8rem",
     arrows: false,
-    // start: 1,
+    breakpoints: {
+      640: {
+        padding: "1.25rem",
+      },
+    },
   }).mount();
 });

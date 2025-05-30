@@ -1,12 +1,52 @@
 .hero {
+  position: relative;
+  margin-bottom: 7.6rem;
+
+  @include respond(phone) {
+    margin-bottom: 4rem;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__house-img {
+    position: absolute;
+    top: -11.3125rem;
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 45rem;
+    z-index: -1;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__bg-img {
+    position: absolute;
+    top: -11.3125rem;
+    left: 0;
+    width: 50%;
+    height: 22.5625rem;
+    z-index: -1;
   }
 
   &__title {
     text-transform: capitalize;
     max-width: 29rem;
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
 
     span {
       color: $color-primary;
@@ -22,11 +62,27 @@
   &__content {
     max-width: 31rem;
 
+    @include respond(phone) {
+      max-width: 100%;
+    }
+
     .form {
       margin-top: 2.1rem;
 
+      input {
+        @include respond(phone) {
+          padding-right: 1rem;
+        }
+      }
+
       .button-filled-icon {
         padding-left: 2.2rem;
+
+        @include respond(phone) {
+          position: static;
+          width: 100%;
+          margin-top: 1rem;
+        }
       }
     }
   }
@@ -35,8 +91,8 @@
     margin-top: 2rem;
 
     img {
-      height: 64px;
-      width: 83px;
+      height: 4rem;
+      width: 5.1875rem; // 83px
       object-fit: contain;
 
       &:not(:last-child) {
@@ -46,18 +102,32 @@
   }
 
   &__statistic {
-    align-self: flex-end;
-    overflow-x: scroll;
+    position: absolute;
+    right: 0;
+    padding-left: 3rem;
+    bottom: -2.5rem;
+    width: 50%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+    @include respond(phone) {
+      position: static;
+      width: 100%;
+      padding-left: 1rem;
+      padding-bottom: 2rem;
+    }
 
     ul {
       display: flex;
       list-style: none;
+      padding-right: 7rem;
 
       li {
         background-color: $color-white;
         box-shadow: 0 11px 48px rgba(51, 51, 51, 0.06);
-        border-radius: 32px;
-        padding: 1rem;
+        border-radius: $border-radius * 2;
+        padding: 1.3rem;
         display: flex;
         align-items: center;
 
@@ -74,13 +144,14 @@
   }
 
   &__statistic-avatar {
-    width: 56px;
-    height: 56px;
+    width: 3.5rem; // 56px
+    height: 3.5rem; // 56px
     border-radius: 50%;
     border: 3px solid $color-white;
     object-fit: cover;
     box-shadow: 0 9px 32px 0 rgba(89, 92, 219, 0.1);
-    margin-left: -20px;
+    margin-left: -1.7rem; // -20px
+    z-index: 1;
     transition: transform 0.2s ease;
 
     &:first-child {
@@ -88,20 +159,21 @@
     }
 
     &:hover {
-      z-index: 2;
       transform: scale(1.05);
     }
   }
 
   &__statistic-img {
-    width: 56px;
-    height: 56px;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 24px;
     box-shadow: 0 11px 48px rgba(51, 51, 51, 0.06);
   }
 
   &__statistic-number {
     font-weight: 600;
+    margin-top: 0.3rem;
+    line-height: 1;
   }
 
   &__statistic-text {

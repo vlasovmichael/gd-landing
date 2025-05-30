@@ -1,26 +1,52 @@
 .footer {
   padding-bottom: 7rem;
+  color: $color-grey-3;
+  font-size: 0.875rem;
+  position: relative;
+  flex: 0 0 auto;
+
+  @include respond(phone) {
+    padding-bottom: 4rem;
+  }
 
   .container {
     display: flex;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
+
+    @include respond(phone) {
+      text-align: center;
+    }
 
     svg {
-      width: 115px;
-      height: 36px;
+      width: 7.1875rem;
+      height: 2.25rem; // 36px
     }
   }
 
   &__content {
     max-width: 23.5rem;
-    margin-right: 5rem;
+    margin-right: 8.3rem;
+
+    @include respond(phone) {
+      max-width: 100%;
+      margin-bottom: 2rem;
+      margin-right: 0;
+    }
 
     p {
       color: $color-grey-3;
       margin-bottom: 1.5rem;
+
+      @include respond(phone) {
+        text-align: center;
+      }
     }
   }
 
@@ -28,21 +54,52 @@
     display: flex;
     align-items: center;
 
-    svg {
-      width: 32px;
-      height: 32px;
-      color: $color-grey-3;
+    @include respond(phone) {
+      justify-content: center;
     }
   }
 
-  &__icon:not(:last-child) {
-    margin-right: 2rem;
+  &__icon {
+    color: $color-black;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: currentColor;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $color-grey-3;
+      }
+    }
   }
 
   &__info {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h4 {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__nav {
+    @include respond(phone) {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   &__list {
@@ -50,7 +107,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   &__link {
@@ -59,9 +116,19 @@
     font-size: 0.875rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
+    transition: all 0.2s ease;
 
     &:hover {
       color: $color-primary;
     }
+  }
+
+  &__bg-img {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 31.5rem;
   }
 }

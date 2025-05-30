@@ -23,6 +23,10 @@ export default defineConfig({
             details,
           },
         },
+        {
+          input: "components.njk",
+          output: "components.html",
+        },
       ],
     }),
   ],

@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>GD Landing</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,12 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..900&display=swap"
       rel="stylesheet"
     />
-    <title>GD Landing</title>
   </head>
   <body>
-    <!-- header -->
-    <header class="header">
+    <div class="out">
+      <header class="header">
   <div class="container">
+    <button class="burger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <div class="header__logo">
       <svg class="header__logo-icon">
         <use href="#logo" />
@@ -53,107 +58,134 @@
   </div>
 </header>
 
-    <!-- hero -->
-    <section class="hero">
-  <div class="container">
-    <div class="hero__content">
-      <h1 class="hero__title">
-        find the place to live <span>your dreams</span> easily here
-      </h1>
-      <p class="hero__text">
-        Everything you need about finding your place to live will be here, where
-        it will be easier for you
-      </p>
-      <form class="form form--complex">
-        <svg class="form--complex__location-icon">
-          <use href="#location-icon" />
-        </svg>
-        <input
-          type="text"
-          class="default-input form--complex__input"
-          placeholder="Search for the location you want!"
-        />
-        <button class="button-filled-icon button-filled-icon--right">
-          Search
-          <svg><use href="#button-white-right-icon" /></svg>
-        </button>
-      </form>
-      <div class="hero__partnerships">
-        <p class="hero__text">Our Partnership</p>
+
+      <main>
         
-          <img src="/src/img/partners-traveloka.png" alt="partners traveloka" />
-        
-          <img src="/src/img/partners-ticket.png" alt="partners ticket" />
-        
-          <img src="/src/img/partners-airbnb.png" alt="partners-airbnb" />
-        
-          <img src="/src/img/partners-trip-advisor.png" alt="partners trip advisor" />
-        
+  <section class="hero">
+  <img
+    src="/src/img/hero-house.png"
+    srcset="
+      /src/img/hero-house.png 1x,
+      /src/img/hero-house@2x.png 2x,
+      /src/img/hero-house@3x.png 3x
+    "
+    alt="House"
+    class="hero__house-img"
+  />
+  <svg class="hero__bg-img">
+    <use href="#hero-bg" />
+  </svg>
+  
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          find the place to live <span>your dreams</span> easily here
+        </h1>
+        <p class="hero__text">
+          Everything you need about finding your place to live will be here, where
+          it will be easier for you
+        </p>
+        <form class="form form--complex">
+          <svg class="form--complex__location-icon">
+            <use href="#location-icon" />
+          </svg>
+          <input
+            type="text"
+            class="default-input form--complex__input"
+            placeholder="Search for the location you want!"
+          />
+          <span class="form__error">Field error. Please fix it</span>
+          <button class="button-filled-icon button-filled-icon--right">
+            Search
+            <svg><use href="#button-white-right-icon" /></svg>
+          </button>
+        </form>
+        <div class="hero__partnerships">
+          <p class="hero__text">Our Partnership</p>
+          
+            <img src="/src/img/partners-traveloka.png" alt="partners traveloka" />
+          
+            <img src="/src/img/partners-ticket.png" alt="partners ticket" />
+          
+            <img src="/src/img/partners-airbnb.png" alt="partners-airbnb" />
+          
+            <img src="/src/img/partners-trip-advisor.png" alt="partners trip advisor" />
+          
+        </div>
       </div>
+      
     </div>
-    <div class="hero__statistic">
-      <ul>
-        <li class="hero__statistic-item">
-          <div class="hero__statistic-avatar-group">
-            <img
-              class="hero__statistic-avatar"
-              src="./img/hero-avatar-1.jpg"
-              alt="Person 1"
-            />
-            <img
-              class="hero__statistic-avatar"
-              src="./img/hero-avatar-2.jpg"
-              alt="Person 2"
-            />
-            <img
-              class="hero__statistic-avatar"
-              src="./img/hero-avatar-3.jpg"
-              alt="Person 3"
-            />
-          </div>
-          <div class="hero__statistic-content">
-            <p class="hero__statistic-number">1K+ People</p>
-            <span class="hero__statistic-text">Successfully Getting Home</span>
-          </div>
-        </li>
-        <li class="hero__statistic-item">
-          <div class="hero__statistic-image">
-            <img
-              class="hero__statistic-img"
-              src="./img/hero-2.png"
-              alt="Hero image"
-            />
-          </div>
-          <div class="hero__statistic-content">
-            <p class="hero__statistic-number">56 Houses</p>
-            <span class="hero__statistic-text">Sold Monthly</span>
-          </div>
-        </li>
-        <li class="hero__statistic-item">
-          <div class="hero__statistic-avatar-group">
-            <img
-              class="hero__statistic-avatar"
-              src="./img/hero-avatar-4.jpg"
-              alt="Person 4"
-            />
-          </div>
-          <div class="hero__statistic-content">
-            <p class="hero__statistic-number">4k+</p>
-            <span class="hero__statistic-text"
-              >People Looking for New Homes</span
-            >
-          </div>
-        </li>
-      </ul>
-    </div>
+  
+  <div class="hero__statistic">
+    <ul>
+      <li class="hero__statistic-item">
+        <div class="hero__statistic-avatar-group">
+        
+        
+        <img
+          class="hero__statistic-avatar"
+          src="./img/hero-avatar-1.jpg"
+          alt="Person 1"
+        />
+        
+        <img
+          class="hero__statistic-avatar"
+          src="./img/hero-avatar-2.jpg"
+          alt="Person 2"
+        />
+        
+        <img
+          class="hero__statistic-avatar"
+          src="./img/hero-avatar-3.jpg"
+          alt="Person 3"
+        />
+        
+        </div>
+        <div class="hero__statistic-content">
+          <p class="hero__statistic-number">1K+ People</p>
+          <span class="hero__statistic-text">Successfully Getting Home</span>
+        </div>
+      </li>
+      <li class="hero__statistic-item">
+        <div class="hero__statistic-image">
+          <img
+            class="hero__statistic-img"
+            src="./img/hero-2.png"
+            alt="Hero image"
+          />
+        </div>
+        <div class="hero__statistic-content">
+          <p class="hero__statistic-number">56 Houses</p>
+          <span class="hero__statistic-text">Sold Monthly</span>
+        </div>
+      </li>
+      <li class="hero__statistic-item">
+        <div class="hero__statistic-avatar-group">
+          <img
+            class="hero__statistic-avatar"
+            src="./img/hero-avatar-4.jpg"
+            alt="Person 4"
+          />
+        </div>
+        <div class="hero__statistic-content">
+          <p class="hero__statistic-number">4k+</p>
+          <span class="hero__statistic-text"
+            >People Looking for New Homes</span
+          >
+        </div>
+      </li>
+    </ul>
   </div>
+  
 </section>
 
-    <!-- recomendations -->
-    <section class="recomendations">
+  <section class="recomendations">
   <div class="container">
     <div class="recomendations__header">
-      <h2>Featured House</h2>
+      <div class="sub-header-horizontal">
+        <h6>Our Recommendation</h6>
+        <h2>Featured House</h2>
+      </div>
       <div class="recomendations__tab-container">
         <button
           class="button-outline recomendations__tab recomendations__tab--1 recomendations__tab--active"
@@ -189,770 +221,769 @@
     </div>
   </div>
   <div class="container">
-    <div class="slider-outer">
-      <div class="slider-inner">
-        <div
-          class="recomendations__content recomendations__content--1 recomendations__content--active"
-        >
-          <!-- 1 -->
-          <div class="splide">
-          <div class="splide__track">
-            <ul class="recomendations__carousel splide__list">
-              
-                <li class="recomendations__item splide__slide">
-                  <a href="#" class="recomendations__link">
-                    <div class="recomendations__image">
+    <div
+      class="recomendations__content recomendations__content--1 recomendations__content--active"
+    >
+      <!-- 1 -->
+      <div class="splide">
+      <div class="splide__track">
+        <ul class="recomendations__carousel splide__list">
+          
+            <li class="recomendations__item splide__slide">
+              <a href="#" class="recomendations__link">
+                <div class="recomendations__image">
+                  <img
+                    src="./src/img/recomendations-1.jpg"
+                    alt="Recomendations house"
+                  />
+                  <div class="label label--danger">
+                    <svg class="label__icon">
+                      <use href="#label-danger" />
+                    </svg>
+                    <span class="label__text">Popular</span>
+                  </div>
+                </div>
+                <div class="recomendations__meta">
+                  <h3 class="recomendations__title">roselands house</h3>
+                  <span class="recomendations__price"> $ 35.000.000</span>
+                  <address class="author">
+                    <img
+                      src="./src/img/avatar-1.png"
+                      alt="Avatar"
+                      class="author__photo"
+                    />
+                    <h6 class="author__name">dianne russell</h6>
+                    <p class="author__location">manchester, kentucky</p>
+                  </address>
+                </div>
+              </a>
+            </li>
+          
+            <li class="recomendations__item splide__slide">
+              <a href="#" class="recomendations__link">
+                <div class="recomendations__image">
+                  <img
+                    src="./src/img/recomendations-2.jpg"
+                    alt="Recomendations house"
+                  />
+                  <div class="label label--info">
+                    <svg class="label__icon">
+                      <use href="#label-info" />
+                    </svg>
+                    <span class="label__text">New house</span>
+                  </div>
+                </div>
+                <div class="recomendations__meta">
+                  <h3 class="recomendations__title">woodlandside</h3>
+                  <span class="recomendations__price"> $ 20.000.000</span>
+                  <address class="author">
+                    <img
+                      src="./src/img/avatar-2.png"
+                      alt="Avatar"
+                      class="author__photo"
+                    />
+                    <h6 class="author__name">robert fox</h6>
+                    <p class="author__location">dr. san jose, south dakota</p>
+                  </address>
+                </div>
+              </a>
+            </li>
+          
+            <li class="recomendations__item splide__slide">
+              <a href="#" class="recomendations__link">
+                <div class="recomendations__image">
+                  <img
+                    src="./src/img/recomendations-3.jpg"
+                    alt="Recomendations house"
+                  />
+                  <div class="label label--success">
+                    <svg class="label__icon">
+                      <use href="#label-success" />
+                    </svg>
+                    <span class="label__text">Best deals</span>
+                  </div>
+                </div>
+                <div class="recomendations__meta">
+                  <h3 class="recomendations__title">The old lighthouse</h3>
+                  <span class="recomendations__price"> $ 44.000.000</span>
+                  <address class="author">
+                    <img
+                      src="./src/img/avatar-3.png"
+                      alt="Avatar"
+                      class="author__photo"
+                    />
+                    <h6 class="author__name">ronald richards</h6>
+                    <p class="author__location">santa ana, illinois</p>
+                  </address>
+                </div>
+              </a>
+            </li>
+          
+            <li class="recomendations__item splide__slide">
+              <a href="#" class="recomendations__link">
+                <div class="recomendations__image">
+                  <img
+                    src="./src/img/recomendations-4.jpg"
+                    alt="Recomendations house"
+                  />
+                  <div class="label label--danger">
+                    <svg class="label__icon">
+                      <use href="#label-danger" />
+                    </svg>
+                    <span class="label__text">Popular</span>
+                  </div>
+                </div>
+                <div class="recomendations__meta">
+                  <h3 class="recomendations__title">Cosmo&#39;s house</h3>
+                  <span class="recomendations__price"> $ 22.000.000</span>
+                  <address class="author">
+                    <img
+                      src="./src/img/avatar-4.png"
+                      alt="Avatar"
+                      class="author__photo"
+                    />
+                    <h6 class="author__name">jenny wilson</h6>
+                    <p class="author__location">preston rd. ingewood, maine 98380</p>
+                  </address>
+                </div>
+              </a>
+            </li>
+          
+            <li class="recomendations__item splide__slide">
+              <a href="#" class="recomendations__link">
+                <div class="recomendations__image">
+                  <img
+                    src="./src/img/recomendations-1.jpg"
+                    alt="Recomendations house"
+                  />
+                  <div class="label label--danger">
+                    <svg class="label__icon">
+                      <use href="#label-danger" />
+                    </svg>
+                    <span class="label__text">Popular</span>
+                  </div>
+                </div>
+                <div class="recomendations__meta">
+                  <h3 class="recomendations__title">roselands house</h3>
+                  <span class="recomendations__price"> $ 35.000.000</span>
+                  <address class="author">
+                    <img
+                      src="./src/img/avatar-1.png"
+                      alt="Avatar"
+                      class="author__photo"
+                    />
+                    <h6 class="author__name">dianne russell</h6>
+                    <p class="author__location">manchester, kentucky</p>
+                  </address>
+                </div>
+              </a>
+            </li>
+          
+            <li class="recomendations__item splide__slide">
+              <a href="#" class="recomendations__link">
+                <div class="recomendations__image">
+                  <img
+                    src="./src/img/recomendations-2.jpg"
+                    alt="Recomendations house"
+                  />
+                  <div class="label label--info">
+                    <svg class="label__icon">
+                      <use href="#label-info" />
+                    </svg>
+                    <span class="label__text">New house</span>
+                  </div>
+                </div>
+                <div class="recomendations__meta">
+                  <h3 class="recomendations__title">woodlandside</h3>
+                  <span class="recomendations__price"> $ 20.000.000</span>
+                  <address class="author">
+                    <img
+                      src="./src/img/avatar-2.png"
+                      alt="Avatar"
+                      class="author__photo"
+                    />
+                    <h6 class="author__name">robert fox</h6>
+                    <p class="author__location">dr. san jose, south dakota</p>
+                  </address>
+                </div>
+              </a>
+            </li>
+          
+            <li class="recomendations__item splide__slide">
+              <a href="#" class="recomendations__link">
+                <div class="recomendations__image">
+                  <img
+                    src="./src/img/recomendations-3.jpg"
+                    alt="Recomendations house"
+                  />
+                  <div class="label label--success">
+                    <svg class="label__icon">
+                      <use href="#label-success" />
+                    </svg>
+                    <span class="label__text">Best deals</span>
+                  </div>
+                </div>
+                <div class="recomendations__meta">
+                  <h3 class="recomendations__title">The old lighthouse</h3>
+                  <span class="recomendations__price"> $ 44.000.000</span>
+                  <address class="author">
+                    <img
+                      src="./src/img/avatar-3.png"
+                      alt="Avatar"
+                      class="author__photo"
+                    />
+                    <h6 class="author__name">ronald richards</h6>
+                    <p class="author__location">santa ana, illinois</p>
+                  </address>
+                </div>
+              </a>
+            </li>
+          
+            <li class="recomendations__item splide__slide">
+              <a href="#" class="recomendations__link">
+                <div class="recomendations__image">
+                  <img
+                    src="./src/img/recomendations-4.jpg"
+                    alt="Recomendations house"
+                  />
+                  <div class="label label--danger">
+                    <svg class="label__icon">
+                      <use href="#label-danger" />
+                    </svg>
+                    <span class="label__text">Popular</span>
+                  </div>
+                </div>
+                <div class="recomendations__meta">
+                  <h3 class="recomendations__title">Cosmo&#39;s house</h3>
+                  <span class="recomendations__price"> $ 22.000.000</span>
+                  <address class="author">
+                    <img
+                      src="./src/img/avatar-4.png"
+                      alt="Avatar"
+                      class="author__photo"
+                    />
+                    <h6 class="author__name">jenny wilson</h6>
+                    <p class="author__location">preston rd. ingewood, maine 98380</p>
+                  </address>
+                </div>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="recomendations__content recomendations__content--2">
+      <!-- 2 -->
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="recomendations__carousel splide__list">
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-1.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--danger">
+                      <svg class="label__icon">
+                        <use href="#label-danger" />
+                      </svg>
+                      <span class="label__text">Popular</span>
+                    </div>
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">roselands house</h3>
+                    <span class="recomendations__price"> $ 35.000.000</span>
+                    <address class="author">
                       <img
-                        src="./src/img/recomendations-1.jpg"
-                        alt="Recomendations house"
+                        src="./src/img/avatar-1.png"
+                        alt="Avatar"
+                        class="author__photo"
                       />
-                      <div class="label label--danger">
-                        <svg class="label__icon">
-                          <use href="#label-danger" />
-                        </svg>
-                        <span class="label__text">Popular</span>
-                      </div>
+                      <h6 class="author__name">dianne russell</h6>
+                      <p class="author__location">manchester, kentucky</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-2.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--info">
+                      <svg class="label__icon">
+                        <use href="#label-info" />
+                      </svg>
+                      <span class="label__text">New house</span>
                     </div>
-                    <div class="recomendations__meta">
-                      <h3 class="recomendations__title">roselands house</h3>
-                      <span class="recomendations__price"> $ 35.000.000</span>
-                      <address class="author">
-                        <img
-                          src="./src/img/avatar-1.png"
-                          alt="Avatar"
-                          class="author__photo"
-                        />
-                        <h6 class="author__name">dianne russell</h6>
-                        <p class="author__location">manchester, kentucky</p>
-                      </address>
-                    </div>
-                  </a>
-                </li>
-              
-                <li class="recomendations__item splide__slide">
-                  <a href="#" class="recomendations__link">
-                    <div class="recomendations__image">
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">woodlandside</h3>
+                    <span class="recomendations__price"> $ 20.000.000</span>
+                    <address class="author">
                       <img
-                        src="./src/img/recomendations-2.jpg"
-                        alt="Recomendations house"
+                        src="./src/img/avatar-2.png"
+                        alt="Avatar"
+                        class="author__photo"
                       />
-                      <div class="label label--info">
-                        <svg class="label__icon">
-                          <use href="#label-info" />
-                        </svg>
-                        <span class="label__text">New house</span>
-                      </div>
+                      <h6 class="author__name">robert fox</h6>
+                      <p class="author__location">dr. san jose, south dakota</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-3.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--success">
+                      <svg class="label__icon">
+                        <use href="#label-success" />
+                      </svg>
+                      <span class="label__text">Best deals</span>
                     </div>
-                    <div class="recomendations__meta">
-                      <h3 class="recomendations__title">woodlandside</h3>
-                      <span class="recomendations__price"> $ 20.000.000</span>
-                      <address class="author">
-                        <img
-                          src="./src/img/avatar-2.png"
-                          alt="Avatar"
-                          class="author__photo"
-                        />
-                        <h6 class="author__name">robert fox</h6>
-                        <p class="author__location">dr. san jose, south dakota</p>
-                      </address>
-                    </div>
-                  </a>
-                </li>
-              
-                <li class="recomendations__item splide__slide">
-                  <a href="#" class="recomendations__link">
-                    <div class="recomendations__image">
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">The old lighthouse</h3>
+                    <span class="recomendations__price"> $ 44.000.000</span>
+                    <address class="author">
                       <img
-                        src="./src/img/recomendations-3.jpg"
-                        alt="Recomendations house"
+                        src="./src/img/avatar-3.png"
+                        alt="Avatar"
+                        class="author__photo"
                       />
-                      <div class="label label--success">
-                        <svg class="label__icon">
-                          <use href="#label-success" />
-                        </svg>
-                        <span class="label__text">Best deals</span>
-                      </div>
+                      <h6 class="author__name">ronald richards</h6>
+                      <p class="author__location">santa ana, illinois</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-4.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--danger">
+                      <svg class="label__icon">
+                        <use href="#label-danger" />
+                      </svg>
+                      <span class="label__text">Popular</span>
                     </div>
-                    <div class="recomendations__meta">
-                      <h3 class="recomendations__title">The old lighthouse</h3>
-                      <span class="recomendations__price"> $ 44.000.000</span>
-                      <address class="author">
-                        <img
-                          src="./src/img/avatar-3.png"
-                          alt="Avatar"
-                          class="author__photo"
-                        />
-                        <h6 class="author__name">ronald richards</h6>
-                        <p class="author__location">santa ana, illinois</p>
-                      </address>
-                    </div>
-                  </a>
-                </li>
-              
-                <li class="recomendations__item splide__slide">
-                  <a href="#" class="recomendations__link">
-                    <div class="recomendations__image">
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">Cosmo&#39;s house</h3>
+                    <span class="recomendations__price"> $ 22.000.000</span>
+                    <address class="author">
                       <img
-                        src="./src/img/recomendations-4.jpg"
-                        alt="Recomendations house"
+                        src="./src/img/avatar-4.png"
+                        alt="Avatar"
+                        class="author__photo"
                       />
-                      <div class="label label--danger">
-                        <svg class="label__icon">
-                          <use href="#label-danger" />
-                        </svg>
-                        <span class="label__text">Popular</span>
-                      </div>
+                      <h6 class="author__name">jenny wilson</h6>
+                      <p class="author__location">preston rd. ingewood, maine 98380</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-1.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--danger">
+                      <svg class="label__icon">
+                        <use href="#label-danger" />
+                      </svg>
+                      <span class="label__text">Popular</span>
                     </div>
-                    <div class="recomendations__meta">
-                      <h3 class="recomendations__title">Cosmo&#39;s house</h3>
-                      <span class="recomendations__price"> $ 22.000.000</span>
-                      <address class="author">
-                        <img
-                          src="./src/img/avatar-4.png"
-                          alt="Avatar"
-                          class="author__photo"
-                        />
-                        <h6 class="author__name">jenny wilson</h6>
-                        <p class="author__location">preston rd. ingewood, maine 98380</p>
-                      </address>
-                    </div>
-                  </a>
-                </li>
-              
-                <li class="recomendations__item splide__slide">
-                  <a href="#" class="recomendations__link">
-                    <div class="recomendations__image">
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">roselands house</h3>
+                    <span class="recomendations__price"> $ 35.000.000</span>
+                    <address class="author">
                       <img
-                        src="./src/img/recomendations-1.jpg"
-                        alt="Recomendations house"
+                        src="./src/img/avatar-1.png"
+                        alt="Avatar"
+                        class="author__photo"
                       />
-                      <div class="label label--danger">
-                        <svg class="label__icon">
-                          <use href="#label-danger" />
-                        </svg>
-                        <span class="label__text">Popular</span>
-                      </div>
+                      <h6 class="author__name">dianne russell</h6>
+                      <p class="author__location">manchester, kentucky</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-2.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--info">
+                      <svg class="label__icon">
+                        <use href="#label-info" />
+                      </svg>
+                      <span class="label__text">New house</span>
                     </div>
-                    <div class="recomendations__meta">
-                      <h3 class="recomendations__title">roselands house</h3>
-                      <span class="recomendations__price"> $ 35.000.000</span>
-                      <address class="author">
-                        <img
-                          src="./src/img/avatar-1.png"
-                          alt="Avatar"
-                          class="author__photo"
-                        />
-                        <h6 class="author__name">dianne russell</h6>
-                        <p class="author__location">manchester, kentucky</p>
-                      </address>
-                    </div>
-                  </a>
-                </li>
-              
-                <li class="recomendations__item splide__slide">
-                  <a href="#" class="recomendations__link">
-                    <div class="recomendations__image">
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">woodlandside</h3>
+                    <span class="recomendations__price"> $ 20.000.000</span>
+                    <address class="author">
                       <img
-                        src="./src/img/recomendations-2.jpg"
-                        alt="Recomendations house"
+                        src="./src/img/avatar-2.png"
+                        alt="Avatar"
+                        class="author__photo"
                       />
-                      <div class="label label--info">
-                        <svg class="label__icon">
-                          <use href="#label-info" />
-                        </svg>
-                        <span class="label__text">New house</span>
-                      </div>
+                      <h6 class="author__name">robert fox</h6>
+                      <p class="author__location">dr. san jose, south dakota</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-3.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--success">
+                      <svg class="label__icon">
+                        <use href="#label-success" />
+                      </svg>
+                      <span class="label__text">Best deals</span>
                     </div>
-                    <div class="recomendations__meta">
-                      <h3 class="recomendations__title">woodlandside</h3>
-                      <span class="recomendations__price"> $ 20.000.000</span>
-                      <address class="author">
-                        <img
-                          src="./src/img/avatar-2.png"
-                          alt="Avatar"
-                          class="author__photo"
-                        />
-                        <h6 class="author__name">robert fox</h6>
-                        <p class="author__location">dr. san jose, south dakota</p>
-                      </address>
-                    </div>
-                  </a>
-                </li>
-              
-                <li class="recomendations__item splide__slide">
-                  <a href="#" class="recomendations__link">
-                    <div class="recomendations__image">
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">The old lighthouse</h3>
+                    <span class="recomendations__price"> $ 44.000.000</span>
+                    <address class="author">
                       <img
-                        src="./src/img/recomendations-3.jpg"
-                        alt="Recomendations house"
+                        src="./src/img/avatar-3.png"
+                        alt="Avatar"
+                        class="author__photo"
                       />
-                      <div class="label label--success">
-                        <svg class="label__icon">
-                          <use href="#label-success" />
-                        </svg>
-                        <span class="label__text">Best deals</span>
-                      </div>
+                      <h6 class="author__name">ronald richards</h6>
+                      <p class="author__location">santa ana, illinois</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-4.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--danger">
+                      <svg class="label__icon">
+                        <use href="#label-danger" />
+                      </svg>
+                      <span class="label__text">Popular</span>
                     </div>
-                    <div class="recomendations__meta">
-                      <h3 class="recomendations__title">The old lighthouse</h3>
-                      <span class="recomendations__price"> $ 44.000.000</span>
-                      <address class="author">
-                        <img
-                          src="./src/img/avatar-3.png"
-                          alt="Avatar"
-                          class="author__photo"
-                        />
-                        <h6 class="author__name">ronald richards</h6>
-                        <p class="author__location">santa ana, illinois</p>
-                      </address>
-                    </div>
-                  </a>
-                </li>
-              
-                <li class="recomendations__item splide__slide">
-                  <a href="#" class="recomendations__link">
-                    <div class="recomendations__image">
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">Cosmo&#39;s house</h3>
+                    <span class="recomendations__price"> $ 22.000.000</span>
+                    <address class="author">
                       <img
-                        src="./src/img/recomendations-4.jpg"
-                        alt="Recomendations house"
+                        src="./src/img/avatar-4.png"
+                        alt="Avatar"
+                        class="author__photo"
                       />
-                      <div class="label label--danger">
-                        <svg class="label__icon">
-                          <use href="#label-danger" />
-                        </svg>
-                        <span class="label__text">Popular</span>
-                      </div>
-                    </div>
-                    <div class="recomendations__meta">
-                      <h3 class="recomendations__title">Cosmo&#39;s house</h3>
-                      <span class="recomendations__price"> $ 22.000.000</span>
-                      <address class="author">
-                        <img
-                          src="./src/img/avatar-4.png"
-                          alt="Avatar"
-                          class="author__photo"
-                        />
-                        <h6 class="author__name">jenny wilson</h6>
-                        <p class="author__location">preston rd. ingewood, maine 98380</p>
-                      </address>
-                    </div>
-                  </a>
-                </li>
-              
-            </ul>
-          </div>
-          </div>
+                      <h6 class="author__name">jenny wilson</h6>
+                      <p class="author__location">preston rd. ingewood, maine 98380</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+          </ul>
         </div>
-        <div class="recomendations__content recomendations__content--2">
-          <!-- 2 -->
-          <div class="splide">
-            <div class="splide__track">
-              <ul class="recomendations__carousel splide__list">
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-1.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--danger">
-                          <svg class="label__icon">
-                            <use href="#label-danger" />
-                          </svg>
-                          <span class="label__text">Popular</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">roselands house</h3>
-                        <span class="recomendations__price"> $ 35.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-1.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">dianne russell</h6>
-                          <p class="author__location">manchester, kentucky</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-2.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--info">
-                          <svg class="label__icon">
-                            <use href="#label-info" />
-                          </svg>
-                          <span class="label__text">New house</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">woodlandside</h3>
-                        <span class="recomendations__price"> $ 20.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-2.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">robert fox</h6>
-                          <p class="author__location">dr. san jose, south dakota</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-3.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--success">
-                          <svg class="label__icon">
-                            <use href="#label-success" />
-                          </svg>
-                          <span class="label__text">Best deals</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">The old lighthouse</h3>
-                        <span class="recomendations__price"> $ 44.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-3.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">ronald richards</h6>
-                          <p class="author__location">santa ana, illinois</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-4.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--danger">
-                          <svg class="label__icon">
-                            <use href="#label-danger" />
-                          </svg>
-                          <span class="label__text">Popular</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">Cosmo&#39;s house</h3>
-                        <span class="recomendations__price"> $ 22.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-4.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">jenny wilson</h6>
-                          <p class="author__location">preston rd. ingewood, maine 98380</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-1.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--danger">
-                          <svg class="label__icon">
-                            <use href="#label-danger" />
-                          </svg>
-                          <span class="label__text">Popular</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">roselands house</h3>
-                        <span class="recomendations__price"> $ 35.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-1.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">dianne russell</h6>
-                          <p class="author__location">manchester, kentucky</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-2.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--info">
-                          <svg class="label__icon">
-                            <use href="#label-info" />
-                          </svg>
-                          <span class="label__text">New house</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">woodlandside</h3>
-                        <span class="recomendations__price"> $ 20.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-2.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">robert fox</h6>
-                          <p class="author__location">dr. san jose, south dakota</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-3.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--success">
-                          <svg class="label__icon">
-                            <use href="#label-success" />
-                          </svg>
-                          <span class="label__text">Best deals</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">The old lighthouse</h3>
-                        <span class="recomendations__price"> $ 44.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-3.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">ronald richards</h6>
-                          <p class="author__location">santa ana, illinois</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-4.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--danger">
-                          <svg class="label__icon">
-                            <use href="#label-danger" />
-                          </svg>
-                          <span class="label__text">Popular</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">Cosmo&#39;s house</h3>
-                        <span class="recomendations__price"> $ 22.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-4.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">jenny wilson</h6>
-                          <p class="author__location">preston rd. ingewood, maine 98380</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="recomendations__content recomendations__content--3">
-          <!-- 3 -->
-          <div class="splide">
-            <div class="splide__track">
-              <ul class="recomendations__carousel splide__list">
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-1.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--danger">
-                          <svg class="label__icon">
-                            <use href="#label-danger" />
-                          </svg>
-                          <span class="label__text">Popular</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">roselands house</h3>
-                        <span class="recomendations__price"> $ 35.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-1.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">dianne russell</h6>
-                          <p class="author__location">manchester, kentucky</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-2.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--info">
-                          <svg class="label__icon">
-                            <use href="#label-info" />
-                          </svg>
-                          <span class="label__text">New house</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">woodlandside</h3>
-                        <span class="recomendations__price"> $ 20.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-2.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">robert fox</h6>
-                          <p class="author__location">dr. san jose, south dakota</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-3.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--success">
-                          <svg class="label__icon">
-                            <use href="#label-success" />
-                          </svg>
-                          <span class="label__text">Best deals</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">The old lighthouse</h3>
-                        <span class="recomendations__price"> $ 44.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-3.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">ronald richards</h6>
-                          <p class="author__location">santa ana, illinois</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-4.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--danger">
-                          <svg class="label__icon">
-                            <use href="#label-danger" />
-                          </svg>
-                          <span class="label__text">Popular</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">Cosmo&#39;s house</h3>
-                        <span class="recomendations__price"> $ 22.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-4.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">jenny wilson</h6>
-                          <p class="author__location">preston rd. ingewood, maine 98380</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-1.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--danger">
-                          <svg class="label__icon">
-                            <use href="#label-danger" />
-                          </svg>
-                          <span class="label__text">Popular</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">roselands house</h3>
-                        <span class="recomendations__price"> $ 35.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-1.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">dianne russell</h6>
-                          <p class="author__location">manchester, kentucky</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-2.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--info">
-                          <svg class="label__icon">
-                            <use href="#label-info" />
-                          </svg>
-                          <span class="label__text">New house</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">woodlandside</h3>
-                        <span class="recomendations__price"> $ 20.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-2.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">robert fox</h6>
-                          <p class="author__location">dr. san jose, south dakota</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-3.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--success">
-                          <svg class="label__icon">
-                            <use href="#label-success" />
-                          </svg>
-                          <span class="label__text">Best deals</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">The old lighthouse</h3>
-                        <span class="recomendations__price"> $ 44.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-3.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">ronald richards</h6>
-                          <p class="author__location">santa ana, illinois</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-                  <li class="recomendations__item splide__slide">
-                    <a href="#" class="recomendations__link">
-                      <div class="recomendations__image">
-                        <img
-                          src="./src/img/recomendations-4.jpg"
-                          alt="Recomendations house"
-                        />
-                        <div class="label label--danger">
-                          <svg class="label__icon">
-                            <use href="#label-danger" />
-                          </svg>
-                          <span class="label__text">Popular</span>
-                        </div>
-                      </div>
-                      <div class="recomendations__meta">
-                        <h3 class="recomendations__title">Cosmo&#39;s house</h3>
-                        <span class="recomendations__price"> $ 22.000.000</span>
-                        <address class="author">
-                          <img
-                            src="./src/img/avatar-4.png"
-                            alt="Avatar"
-                            class="author__photo"
-                          />
-                          <h6 class="author__name">jenny wilson</h6>
-                          <p class="author__location">preston rd. ingewood, maine 98380</p>
-                        </address>
-                      </div>
-                    </a>
-                  </li>
-                
-              </ul>
-            </div>
-          </div>
+      </div>
+    </div>
+    <div class="recomendations__content recomendations__content--3">
+      <!-- 3 -->
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="recomendations__carousel splide__list">
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-1.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--danger">
+                      <svg class="label__icon">
+                        <use href="#label-danger" />
+                      </svg>
+                      <span class="label__text">Popular</span>
+                    </div>
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">roselands house</h3>
+                    <span class="recomendations__price"> $ 35.000.000</span>
+                    <address class="author">
+                      <img
+                        src="./src/img/avatar-1.png"
+                        alt="Avatar"
+                        class="author__photo"
+                      />
+                      <h6 class="author__name">dianne russell</h6>
+                      <p class="author__location">manchester, kentucky</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-2.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--info">
+                      <svg class="label__icon">
+                        <use href="#label-info" />
+                      </svg>
+                      <span class="label__text">New house</span>
+                    </div>
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">woodlandside</h3>
+                    <span class="recomendations__price"> $ 20.000.000</span>
+                    <address class="author">
+                      <img
+                        src="./src/img/avatar-2.png"
+                        alt="Avatar"
+                        class="author__photo"
+                      />
+                      <h6 class="author__name">robert fox</h6>
+                      <p class="author__location">dr. san jose, south dakota</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-3.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--success">
+                      <svg class="label__icon">
+                        <use href="#label-success" />
+                      </svg>
+                      <span class="label__text">Best deals</span>
+                    </div>
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">The old lighthouse</h3>
+                    <span class="recomendations__price"> $ 44.000.000</span>
+                    <address class="author">
+                      <img
+                        src="./src/img/avatar-3.png"
+                        alt="Avatar"
+                        class="author__photo"
+                      />
+                      <h6 class="author__name">ronald richards</h6>
+                      <p class="author__location">santa ana, illinois</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-4.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--danger">
+                      <svg class="label__icon">
+                        <use href="#label-danger" />
+                      </svg>
+                      <span class="label__text">Popular</span>
+                    </div>
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">Cosmo&#39;s house</h3>
+                    <span class="recomendations__price"> $ 22.000.000</span>
+                    <address class="author">
+                      <img
+                        src="./src/img/avatar-4.png"
+                        alt="Avatar"
+                        class="author__photo"
+                      />
+                      <h6 class="author__name">jenny wilson</h6>
+                      <p class="author__location">preston rd. ingewood, maine 98380</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-1.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--danger">
+                      <svg class="label__icon">
+                        <use href="#label-danger" />
+                      </svg>
+                      <span class="label__text">Popular</span>
+                    </div>
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">roselands house</h3>
+                    <span class="recomendations__price"> $ 35.000.000</span>
+                    <address class="author">
+                      <img
+                        src="./src/img/avatar-1.png"
+                        alt="Avatar"
+                        class="author__photo"
+                      />
+                      <h6 class="author__name">dianne russell</h6>
+                      <p class="author__location">manchester, kentucky</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-2.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--info">
+                      <svg class="label__icon">
+                        <use href="#label-info" />
+                      </svg>
+                      <span class="label__text">New house</span>
+                    </div>
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">woodlandside</h3>
+                    <span class="recomendations__price"> $ 20.000.000</span>
+                    <address class="author">
+                      <img
+                        src="./src/img/avatar-2.png"
+                        alt="Avatar"
+                        class="author__photo"
+                      />
+                      <h6 class="author__name">robert fox</h6>
+                      <p class="author__location">dr. san jose, south dakota</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-3.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--success">
+                      <svg class="label__icon">
+                        <use href="#label-success" />
+                      </svg>
+                      <span class="label__text">Best deals</span>
+                    </div>
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">The old lighthouse</h3>
+                    <span class="recomendations__price"> $ 44.000.000</span>
+                    <address class="author">
+                      <img
+                        src="./src/img/avatar-3.png"
+                        alt="Avatar"
+                        class="author__photo"
+                      />
+                      <h6 class="author__name">ronald richards</h6>
+                      <p class="author__location">santa ana, illinois</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="recomendations__item splide__slide">
+                <a href="#" class="recomendations__link">
+                  <div class="recomendations__image">
+                    <img
+                      src="./src/img/recomendations-4.jpg"
+                      alt="Recomendations house"
+                    />
+                    <div class="label label--danger">
+                      <svg class="label__icon">
+                        <use href="#label-danger" />
+                      </svg>
+                      <span class="label__text">Popular</span>
+                    </div>
+                  </div>
+                  <div class="recomendations__meta">
+                    <h3 class="recomendations__title">Cosmo&#39;s house</h3>
+                    <span class="recomendations__price"> $ 22.000.000</span>
+                    <address class="author">
+                      <img
+                        src="./src/img/avatar-4.png"
+                        alt="Avatar"
+                        class="author__photo"
+                      />
+                      <h6 class="author__name">jenny wilson</h6>
+                      <p class="author__location">preston rd. ingewood, maine 98380</p>
+                    </address>
+                  </div>
+                </a>
+              </li>
+            
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-    <!-- tour -->
-    <section class="tour">
+  <section class="tour">
+  <svg class="tour__bg-img"><use href="#tour-bg" /></svg>
   <div class="container">
     <div class="tour__content">
-      <h2>Let’s tour and see our house!</h2>
+      <div class="sub-header-horizontal">
+        <h6>Ready to Sell!</h6>
+        <h2>Let’s tour and see our house!</h2>
+      </div>
       <p>
         Houses recommended by our partners that have been curated to become
         the home of your dreams!
@@ -1015,7 +1046,7 @@
             </li>
             <li
               class="splide__slide"
-              data-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              data-src="https://www.youtube.com/embed/umokQ920a8U"
               data-type="video"
               data-micromodal-trigger="modal-media"
             >
@@ -1024,7 +1055,7 @@
             </li>
             <li
               class="splide__slide"
-              data-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              data-src="https://www.youtube.com/embed/svLCiJfGLJQ"
               data-type="video"
               data-micromodal-trigger="modal-media"
             >
@@ -1059,9 +1090,11 @@
     </div>
   </div>
 </section>
-    <!-- testimonial -->
-    <section class="testimonial">
-  <h2>What Our User Say About Us</h2>
+  <section class="testimonial">
+  <div class="sub-header-vertical">
+    <h6>See Our Review</h6>
+    <h2>What Our User Say About Us</h2>
+  </div>
   <div id="testimonial-slider" class="splide">
     <div class="splide__track">
       <ul class="testimonial-carousel splide__list">
@@ -1194,10 +1227,13 @@
   </div>
 </section>
 
-    <!-- find-more -->
-    <section class="find-more">
+  <section class="find-more">
+  <svg class="find-more__bg-img"><use href="#find-more-bg" /></svg>
   <div class="container">
-    <h2>Find out more about selling and buying homes</h2>
+    <div class="sub-header-vertical">
+      <h6>See tips and trick from our partnership</h6>
+      <h2>Find out more about selling and buying homes</h2>
+    </div>
     <button id="load-more" class="button-filled find-more__button">
       more articles
       <span id="articles-loader" class="loader"></span>
@@ -1207,7 +1243,7 @@
          <li class="articles__item">
   <div class="articles__image">
     <img
-      src="./src/img/find-more-image-1.jpg"
+      src="/img/find-more-image-1.jpg"
       alt="The things we need to check when we want to buy a house"
       class="articles__img"
     />
@@ -1215,7 +1251,7 @@
   <div class="articles__content">
     <address class="author">
       <img
-        src="./src/img/hero-avatar-1.jpg"
+        src="/img/hero-avatar-1.jpg"
         alt="Avatar"
         class="author__photo"
       />
@@ -1236,7 +1272,7 @@
   <li class="articles__item">
   <div class="articles__image">
     <img
-      src="./src/img/find-more-image-2.jpg"
+      src="/img/find-more-image-2.jpg"
       alt="7 Ways to distinguish the quality of the house we want to buy"
       class="articles__img"
     />
@@ -1244,7 +1280,7 @@
   <div class="articles__content">
     <address class="author">
       <img
-        src="./src/img/hero-avatar-2.jpg"
+        src="/img/hero-avatar-2.jpg"
         alt="Avatar"
         class="author__photo"
       />
@@ -1265,7 +1301,7 @@
   <li class="articles__item">
   <div class="articles__image">
     <img
-      src="./src/img/find-more-image-3.jpg"
+      src="/img/find-more-image-3.jpg"
       alt="The best way to know the quality of the house we want to buy"
       class="articles__img"
     />
@@ -1273,7 +1309,7 @@
   <div class="articles__content">
     <address class="author">
       <img
-        src="./src/img/hero-avatar-3.jpg"
+        src="/img/hero-avatar-3.jpg"
         alt="Avatar"
         class="author__photo"
       />
@@ -1298,7 +1334,7 @@
         <div class="featured is-visible">
           <div class="articles__image">
             <img
-              src="./src/img/find-more-image-1.jpg"
+              src="/img/find-more-image-1.jpg"
               alt="The things we need to check when we want to buy a house"
               class="articles__img"
             />
@@ -1306,7 +1342,7 @@
           <div class="articles__content">
             <address class="author">
               <img
-                src="./src/img/hero-avatar-1.jpg"
+                src="/img/hero-avatar-1.jpg"
                 alt="Avatar"
                 class="author__photo"
               />
@@ -1327,30 +1363,31 @@
   </div>
 </section>
 
-    <!-- subscribe -->
-    <section class="subscribe">
+  <section class="subscribe">
   <div class="container">
     <div class="subscribe__bg">
-      <h2>Subscribe For More Info and update from Hounter</h2>
-      <form class="form form--complex">
-        <svg class="form--complex__location-icon">
-          <use href="#icon-email" />
-        </svg>
-        <input
-          type="email"
-          class="default-input form--complex__input"
-          placeholder="Your email here"
-        />
-        <span class="form__error">Field error. Please fix it</span>
-        <button class="button-filled-icon button-filled-icon--right">
-          Subscribe Now
-        </button>
-      </form>
+      <div class="subscribe__inner">
+        <h2>Subscribe For More Info and update from Hounter</h2>
+        <form novalidate class="form form--complex">
+          <svg class="form--complex__location-icon">
+            <use href="#icon-email" />
+          </svg>
+          <input
+            type="email"
+            name="email"
+            class="default-input form__input form--complex__input"
+            placeholder="Your email here"
+          />
+          <span class="form__error">Field error. Please fix it</span>
+          <button class="button-filled-icon button-filled-icon--right">
+            Subscribe Now
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
-    <!-- contact-us -->
-    <section class="contact-us">
+  <section class="contact-us">
   <div class="container">
     <div class="contact-us__content contact-us__area">
       <h3>Would you like to join?</h3>
@@ -1419,7 +1456,7 @@
               class="default-input form__textarea"
               name="textarea"
               maxlength="500"
-              placeholder="Textarea"
+              placeholder="Message"
             ></textarea>
             <div class="form__counter"><span id="charCount">0</span>/500</div>
           </div>
@@ -1442,8 +1479,27 @@
   </div>
 </section>
 
-    <!-- footer -->
-    <footer class="footer">
+  <div class="modal micromodal-slide" id="modal-media" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+      <button
+        class="modal__close"
+        aria-label="Close modal"
+        data-micromodal-close
+      >
+        <svg><use href="#button-cookies-close" /></svg>
+      </button>
+      <main class="modal__content">
+        <div id="modal-media-wrapper"></div>
+      </main>
+    </div>
+  </div>
+</div>
+
+
+      </main>
+
+      <footer class="footer">
   <div class="container">
     <div class="footer__content">
       <div class="footer__logo">
@@ -1528,36 +1584,21 @@
       </nav>
     </div>
   </div>
+  <svg class="footer__bg-img">
+    <use href="#footer-bg" />
+  </svg>
 </footer>
 
-    <!-- cookies -->
-    <!-- <div class="cookies">
+    </div>
+    
+    <div class="cookies">
   <svg class="cookies__icon"><use href="#cookies-icon" /></svg>
   <span>We are using cookies</span>
   <button class="cookies__button">
     <svg><use href="#button-cookies-close" /></svg>
   </button>
-</div> -->
-
-    <!-- modal -->
-    <div class="modal micromodal-slide" id="modal-media" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-    <div class="modal__container" role="dialog" aria-modal="true">
-      <button
-        class="modal__close"
-        aria-label="Close modal"
-        data-micromodal-close
-      >
-        <svg><use href="#button-cookies-close" /></svg>
-      </button>
-      <main class="modal__content">
-        <div id="modal-media-wrapper"></div>
-      </main>
-    </div>
-  </div>
 </div>
 
-    <!-- svg -->
     <svg style="display: none">
   <symbol id="button-white-right-icon" viewBox="0 0 8 14">
     <path
@@ -1674,19 +1715,16 @@
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M32 16.0966C32 7.20754 24.8357 0 16 0C7.16429 0 0 7.20754 0 16.0966C0 24.1306 5.85001 30.7899 13.5 31.9984V20.751H9.43644V16.0966H13.5V12.5503C13.5 8.51683 15.8893 6.28701 19.5436 6.28701C21.2943 6.28701 23.1258 6.60177 23.1258 6.60177V10.5634H21.1071C19.1207 10.5634 18.4994 11.8037 18.4994 13.0785V16.0966H22.9364L22.2278 20.751H18.5001V32C26.1501 30.7919 32 24.1326 32 16.0966Z"
-      fill="#1B1C57"
     />
   </symbol>
   <symbol id="icon-twitter" viewBox="0 0 24 20">
     <path
       d="M24 2.3698C23.0997 2.77727 22.1472 3.04573 21.1724 3.16667C22.1968 2.54187 22.9672 1.54926 23.339 0.375009C22.3705 0.9649 21.3127 1.3788 20.2109 1.59897C19.7471 1.09247 19.189 0.689541 18.5709 0.414667C17.9529 0.139793 17.2875 -0.00128507 16.6155 8.82003e-06C13.8944 8.82003e-06 11.6925 2.26042 11.6925 5.04688C11.6905 5.43446 11.7332 5.8209 11.8195 6.19793C9.86833 6.10264 7.95775 5.58416 6.20998 4.67566C4.46221 3.76715 2.91574 2.48863 1.66949 0.921883C1.23228 1.68965 1.00106 2.56566 0.999998 3.45834C0.999998 5.20834 1.8765 6.75522 3.2 7.66146C2.41586 7.64208 1.64779 7.42589 0.960999 7.03125V7.09375C0.960999 9.54166 2.661 11.5781 4.911 12.0417C4.48789 12.1591 4.05188 12.2187 3.614 12.2188C3.30329 12.2193 2.99328 12.1879 2.6885 12.125C3.314 14.1302 5.1345 15.5886 7.29099 15.6302C5.53868 17.0369 3.3873 17.7973 1.175 17.7917C0.782308 17.7911 0.389982 17.7667 0 17.7187C2.25059 19.2157 4.86671 20.0076 7.53698 19.9999C16.605 19.9999 21.559 12.3072 21.559 5.63542C21.559 5.41668 21.5534 5.19792 21.5434 4.98438C22.5051 4.27191 23.3368 3.38653 24 2.3698Z"
-      fill="#1B1C57"
     />
   </symbol>
   <symbol id="icon-pinterest" viewBox="0 0 32 32">
     <path
       d="M16.0036 0C7.16589 0 0 7.16268 0 15.9964C0 22.545 3.94374 28.1724 9.58071 30.6503C9.53784 29.5362 9.57357 28.1938 9.85935 26.9797C10.1666 25.68 11.917 18.2601 11.917 18.2601C11.917 18.2601 11.4025 17.239 11.4025 15.7322C11.4025 13.3613 12.7743 11.5903 14.489 11.5903C15.9464 11.5903 16.6467 12.6829 16.6467 13.9897C16.6467 15.4537 15.7106 17.6389 15.232 19.667C14.8319 21.3667 16.0822 22.745 17.7611 22.745C20.7904 22.745 22.8337 18.853 22.8337 14.2397C22.8337 10.7333 20.4689 8.11248 16.175 8.11248C11.324 8.11248 8.29471 11.7331 8.29471 15.7751C8.29471 17.1676 8.7091 18.1531 9.35209 18.9101C9.645 19.26 9.68787 19.4028 9.58071 19.8027C9.50212 20.0955 9.33066 20.8025 9.25206 21.0882C9.1449 21.4953 8.81626 21.6381 8.45189 21.4881C6.21567 20.5739 5.17258 18.1317 5.17258 15.3751C5.17258 10.8333 9.00915 5.38452 16.6109 5.38452C22.7193 5.38452 26.7417 9.80495 26.7417 14.5468C26.7417 20.8239 23.2481 25.5086 18.104 25.5086C16.3752 25.5086 14.7533 24.5731 14.196 23.5162C14.196 23.5162 13.2673 27.201 13.0672 27.9152C12.7314 29.1507 12.067 30.379 11.4597 31.343C12.9328 31.7773 14.4606 31.9987 15.9964 32C24.8341 32 32 24.8372 32 16.0036C32 7.16982 24.8413 0 16.0036 0Z"
-      fill="#1B1C57"
     />
   </symbol>
   <symbol id="icon-rating" viewBox="0 0 22 22">
@@ -1807,6 +1845,91 @@
       d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM14 14C13.9075 14.0927 13.7976 14.1663 13.6766 14.2164C13.5557 14.2666 13.426 14.2924 13.295 14.2924C13.164 14.2924 13.0343 14.2666 12.9134 14.2164C12.7924 14.1663 12.6825 14.0927 12.59 14L9.3 10.71C9.20551 10.6174 9.13034 10.5069 9.07885 10.3851C9.02735 10.2632 9.00055 10.1323 9 10V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V9.59L14 12.59C14.39 12.98 14.39 13.61 14 14Z"
       fill="#888B97"
     />
+  </symbol>
+  <symbol id="hero-bg" viewBox="0 0 688 481">
+    <g opacity="0.3" filter="url(#filter0_f_2_405)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M298.209 155.001C287.173 189.669 261.914 216.19 239.037 244.462C219.326 268.821 198.32 290.535 173.292 309.373C145.414 330.356 119.122 359.558 84.2732 360.946C49.3115 362.339 19.9507 336.407 -8.93254 316.634C-36.0889 298.044 -55.4251 272.427 -78.8344 249.286C-110.874 217.612 -166.167 199.642 -172.434 155.001C-178.493 111.845 -134.511 78.3497 -107.647 44.0607C-83.8376 13.6712 -57.2616 -13.2453 -24.5625 -33.7378C9.01462 -54.7805 45.0816 -81.9806 84.2732 -76.2154C123.401 -70.4596 140.038 -20.5008 176.088 -4.2213C218.116 14.7576 280.755 -11.4202 308.836 25.1917C335.703 60.222 311.604 112.919 298.209 155.001Z" fill="#82F7FF"/>
+    </g>
+    <g opacity="0.3" filter="url(#filter1_f_2_405)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M545.209 70.0007C534.173 104.669 508.914 131.19 486.037 159.462C466.326 183.821 445.32 205.535 420.292 224.373C392.414 245.356 366.122 274.558 331.273 275.946C296.311 277.339 266.951 251.407 238.067 231.634C210.911 213.044 191.575 187.427 168.166 164.286C136.126 132.612 80.8334 114.642 74.5661 70.0007C68.5073 26.8452 112.489 -6.65035 139.353 -40.9393C163.162 -71.3288 189.738 -98.2453 222.438 -118.738C256.015 -139.781 292.082 -166.981 331.273 -161.215C370.401 -155.46 387.038 -105.501 423.088 -89.2213C465.116 -70.2424 527.755 -96.4202 555.836 -59.8083C582.703 -24.778 558.604 27.919 545.209 70.0007Z" fill="#82FFD2"/>
+    </g>
+    <defs>
+    <filter id="filter0_f_2_405" x="-293" y="-197" width="734" height="678" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_2_405"/>
+    </filter>
+    <filter id="filter1_f_2_405" x="-46" y="-282" width="734" height="678" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_2_405"/>
+    </filter>
+    </defs>
+  </symbol>
+  <symbol id="footer-bg" viewBox="0 0 660 504">
+    <g opacity="0.3" filter="url(#filter0_f_2_652)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M837.209 352.001C826.173 386.669 800.914 413.19 778.037 441.462C758.326 465.821 737.32 487.535 712.292 506.373C684.414 527.356 658.122 556.558 623.273 557.946C588.311 559.339 558.951 533.407 530.067 513.634C502.911 495.044 483.575 469.427 460.166 446.286C428.126 414.612 372.833 396.642 366.566 352.001C360.507 308.845 404.489 275.35 431.353 241.061C455.162 210.671 481.738 183.755 514.438 163.262C548.015 142.219 584.082 115.019 623.273 120.785C662.401 126.54 679.038 176.499 715.088 192.779C757.116 211.758 819.755 185.58 847.836 222.192C874.703 257.222 850.604 309.919 837.209 352.001Z" fill="#82BBFF"/>
+    </g>
+    <g opacity="0.3" filter="url(#filter1_f_2_652)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M591.209 417.001C580.173 451.669 554.914 478.19 532.037 506.462C512.326 530.821 491.32 552.535 466.292 571.373C438.414 592.356 412.122 621.558 377.273 622.946C342.311 624.339 312.951 598.407 284.067 578.634C256.911 560.044 237.575 534.427 214.166 511.286C182.126 479.612 126.833 461.642 120.566 417.001C114.507 373.845 158.489 340.35 185.353 306.061C209.162 275.671 235.738 248.755 268.438 228.262C302.015 207.219 338.082 180.019 377.273 185.785C416.401 191.54 433.038 241.499 469.088 257.779C511.116 276.758 573.755 250.58 601.836 287.192C628.703 322.222 604.604 374.919 591.209 417.001Z" fill="#B9FF82"/>
+    </g>
+    <defs>
+    <filter id="filter0_f_2_652" x="246" y="0" width="734" height="678" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_2_652"/>
+    </filter>
+    <filter id="filter1_f_2_652" x="0" y="65" width="734" height="678" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_2_652"/>
+    </filter>
+    </defs>
+  </symbol>
+  <symbol id="tour-bg" viewBox="0 0 539 802">
+    <g clip-path="url(#clip0_15_934)">
+    <g opacity="0.3" filter="url(#filter0_f_15_934)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M589.209 348.001C578.173 382.669 552.914 409.19 530.037 437.462C510.326 461.821 489.32 483.535 464.292 502.373C436.414 523.356 410.122 552.558 375.273 553.946C340.311 555.339 310.951 529.407 282.067 509.634C254.911 491.044 235.575 465.428 212.166 442.286C180.126 410.612 124.833 392.642 118.566 348.001C112.507 304.845 156.489 271.35 183.353 237.061C207.162 206.671 233.738 179.755 266.438 159.262C300.015 138.22 336.082 111.019 375.273 116.785C414.401 122.54 431.038 172.499 467.088 188.779C509.116 207.758 571.755 181.58 599.836 218.192C626.703 253.222 602.604 305.919 589.209 348.001Z" fill="#FF9882"/>
+    </g>
+    <g opacity="0.3" filter="url(#filter1_f_15_934)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M648.209 470.001C637.173 504.669 611.914 531.19 589.037 559.462C569.326 583.821 548.32 605.535 523.292 624.373C495.414 645.356 469.122 674.558 434.273 675.946C399.311 677.339 369.951 651.407 341.067 631.634C313.911 613.044 294.575 587.428 271.166 564.286C239.126 532.612 183.833 514.642 177.566 470.001C171.507 426.845 215.489 393.35 242.353 359.061C266.162 328.671 292.738 301.755 325.438 281.262C359.015 260.22 395.082 233.019 434.273 238.785C473.401 244.54 490.038 294.499 526.088 310.779C568.116 329.758 630.755 303.58 658.836 340.192C685.703 375.222 661.604 427.919 648.209 470.001Z" fill="#FFFA82"/>
+    </g>
+    </g>
+    <defs>
+    <filter id="filter0_f_15_934" x="-2" y="-3.99997" width="734" height="678" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_15_934"/>
+    </filter>
+    <filter id="filter1_f_15_934" x="57" y="118" width="734" height="678" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_15_934"/>
+    </filter>
+    <clipPath id="clip0_15_934">
+    <rect width="539" height="802" fill="white"/>
+    </clipPath>
+    </defs>
+  </symbol>
+  <symbol id="find-more-bg" viewBox="0 0 472 935">
+    <g opacity="0.3" filter="url(#filter0_f_2_402)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M301.209 352.001C290.173 386.669 264.914 413.19 242.037 441.462C222.326 465.821 201.32 487.535 176.292 506.373C148.414 527.356 122.122 556.558 87.2732 557.946C52.3115 559.339 22.9507 533.407 -5.93254 513.634C-33.0889 495.044 -52.4251 469.427 -75.8344 446.286C-107.874 414.612 -163.167 396.642 -169.434 352.001C-175.493 308.845 -131.511 275.35 -104.647 241.061C-80.8376 210.671 -54.2616 183.755 -21.5625 163.262C12.0146 142.219 48.0816 115.019 87.2732 120.785C126.401 126.54 143.038 176.499 179.088 192.779C221.116 211.758 283.755 185.58 311.836 222.192C338.703 257.222 314.604 309.919 301.209 352.001Z" fill="#82FFE8"/>
+    </g>
+    <g opacity="0.3" filter="url(#filter1_f_2_402)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M329.209 609.001C318.173 643.669 292.914 670.19 270.037 698.462C250.326 722.821 229.32 744.535 204.292 763.373C176.414 784.356 150.122 813.558 115.273 814.946C80.3115 816.339 50.9507 790.407 22.0675 770.634C-5.08885 752.044 -24.4251 726.427 -47.8344 703.286C-79.8736 671.612 -135.167 653.642 -141.434 609.001C-147.493 565.845 -103.511 532.35 -76.6469 498.061C-52.8376 467.671 -26.2616 440.755 6.43753 420.262C40.0146 399.219 76.0816 372.019 115.273 377.785C154.401 383.54 171.038 433.499 207.088 449.779C249.116 468.758 311.755 442.58 339.836 479.192C366.703 514.222 342.604 566.919 329.209 609.001Z" fill="#C8FF82"/>
+    </g>
+    <defs>
+    <filter id="filter0_f_2_402" x="-290" y="0" width="734" height="678" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_2_402"/>
+    </filter>
+    <filter id="filter1_f_2_402" x="-262" y="257" width="734" height="678" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_2_402"/>
+    </filter>
+    </defs>
   </symbol>
 </svg>
 

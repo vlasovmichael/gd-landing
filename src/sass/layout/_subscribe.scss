@@ -1,5 +1,9 @@
 .subscribe {
-  margin-bottom: 5rem;
+  margin-bottom: 7.5rem;
+
+  @include respond(phone) {
+    margin-bottom: 4rem;
+  }
 
   h2 {
     max-width: 28rem;
@@ -8,24 +12,52 @@
     text-transform: capitalize;
   }
 
+  &__inner {
+    background: url("/img/subscribe-people.png") no-repeat center 2.3125rem;
+    background-size: contain;
+    min-height: 19.5rem; // 312px
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include respond(phone) {
+      background: none;
+    }
+  }
+
   &__bg {
     background-image: image-set(
-      url("./img/subscribe-bg@1x.jpg") 1x,
-      url("./img/subscribe-bg@2x.jpg") 2x
+      url("/img/subscribe-bg@1x.jpg") 1x,
+      url("/img/subscribe-bg@2x.jpg") 2x
     );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 32px;
-    min-height: 312px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-radius: $border-radius * 2;
+    padding: 0 1.75rem;
   }
 
   .form {
     max-width: 31rem;
     margin: 0 auto;
     width: 100%;
+
+    &__error {
+      @include respond(phone) {
+        margin-left: 0;
+      }
+    }
+
+    @include respond(phone) {
+      button {
+        position: static;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      input {
+        padding-right: 1rem;
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 .cookies {
   position: fixed;
-  bottom: 20px;
+  bottom: 1.25rem;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -11,7 +11,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  max-width: 465px;
+  max-width: 29.0625rem; // 465px
   margin: 0 auto;
   transition: 0.3s all ease;
   transform: translateY(200%);
@@ -25,8 +25,8 @@
   }
 
   &__icon {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem; // 24px
+    height: 1.5rem;
     fill: currentColor;
     margin-right: 1rem;
   }
@@ -39,8 +39,8 @@
     padding: 0.3rem;
 
     svg {
-      width: 24px;
-      height: 24px;
+      width: 1.5rem;
+      height: 1.5rem;
       stroke: $color-black;
       transition: 0.2s all ease;
     }

@@ -13,6 +13,20 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin sub-header {
+  color: $color-secondary;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 1px;
+    background-color: $color-secondary;
+  }
+}
+
 // MEDIA QUERY MANAGER
 /*
 0 - 600px:      Phone
@@ -33,9 +47,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 40em) {
       @content;
-    } //600px
+    } //640px
   }
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 56.25em) {

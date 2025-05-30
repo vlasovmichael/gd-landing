@@ -1,13 +1,31 @@
 .tour {
   margin-bottom: 5rem;
+  position: relative;
+
+  &__bg-img {
+    position: absolute;
+    top: -80%;
+    right: 0;
+    width: 50%;
+    height: 50.125rem;
+    z-index: -1;
+  }
 
   .container {
     display: flex;
     justify-content: space-between;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__content {
     max-width: 30.25rem;
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
 
     p {
       color: $color-grey-2;
@@ -36,8 +54,8 @@
         margin-bottom: 1.6rem;
 
         svg {
-          width: 25px;
-          height: 24px;
+          width: 1.5625rem;
+          height: 1.5rem;
           margin-right: 1.5rem;
         }
 
@@ -53,31 +71,66 @@
     padding-top: 2rem;
     margin-top: 0.6rem;
 
+    @include respond(phone) {
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto auto auto;
+      align-items: center;
+    }
+
     &__photo {
-      width: 56px;
-      height: 56px;
+      width: 3.5rem;
+      height: 3.5rem;
+
+      @include respond(phone) {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+      }
     }
 
     &__name {
-      margin-top: 3px;
+      margin-top: 0.1875rem;
+
+      @include respond(phone) {
+        grid-column: 2;
+        grid-row: 1;
+      }
     }
 
     &__location {
       margin-top: -1.25rem;
+
+      @include respond(phone) {
+        grid-column: 2;
+        grid-row: 2;
+      }
     }
 
     &__button {
-      margin-top: 5px;
+      margin-top: 0.3125rem;
+
+      @include respond(phone) {
+        margin-top: 1.5rem;
+        grid-column: 1 / span 2;
+        grid-row: 3;
+
+        button {
+          width: 100%;
+        }
+      }
 
       svg {
-        width: 15px;
-        height: 20px;
+        width: 0.9375rem;
+        height: 1.25rem;
       }
     }
   }
 
   &__slider {
-    margin-top: -58px;
+    margin-top: -1.75rem;
+
+    @include respond(phone) {
+      margin-top: 2rem;
+    }
 
     svg {
       position: absolute;
@@ -85,8 +138,8 @@
       left: 50%;
       transform: translateX(-50%);
       pointer-events: none;
-      width: 48px;
-      height: 48px;
+      width: 3rem;
+      height: 3rem;
     }
   }
 
@@ -94,8 +147,12 @@
     max-width: 29.875rem;
     margin-left: auto;
 
+    @include respond(phone) {
+      max-width: 100%;
+    }
+
     ul {
-      height: 416px;
+      height: 26rem;
     }
 
     li {
@@ -127,7 +184,7 @@
   }
 
   &__slider-thumbnail {
-    margin-top: -40px;
+    margin-top: -2.5rem;
 
     .splide__track {
       overflow: visible;
@@ -136,7 +193,7 @@
     .splide__track--nav > .splide__list > .splide__slide {
       width: 6rem;
       height: 5rem;
-      border-radius: 8px;
+      border-radius: $border-radius / 2;
 
       &::before {
         content: "";
@@ -165,6 +222,12 @@
         width: 18.5rem;
         height: 10.5rem;
         margin-top: -5.5rem;
+
+        @include respond(phone) {
+          width: 6rem;
+          height: 5rem;
+          margin-top: 0;
+        }
       }
     }
   }

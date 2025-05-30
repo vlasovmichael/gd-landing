@@ -1,88 +1,99 @@
 <section class="hero">
-  <div class="container">
-    <div class="hero__content">
-      <h1 class="hero__title">
-        find the place to live <span>your dreams</span> easily here
-      </h1>
-      <p class="hero__text">
-        Everything you need about finding your place to live will be here, where
-        it will be easier for you
-      </p>
-      <form class="form form--complex">
-        <svg class="form--complex__location-icon">
-          <use href="#location-icon" />
-        </svg>
-        <input
-          type="text"
-          class="default-input form--complex__input"
-          placeholder="Search for the location you want!"
-        />
-        <button class="button-filled-icon button-filled-icon--right">
-          Search
-          <svg><use href="#button-white-right-icon" /></svg>
-        </button>
-      </form>
-      <div class="hero__partnerships">
-        <p class="hero__text">Our Partnership</p>
-        {% for partner in partners %}
-          <img src="{{ partner.src }}" alt="{{ partner.alt }}" />
-        {% endfor %}
+  <img
+    src="/src/img/hero-house.png"
+    srcset="
+      /src/img/hero-house.png 1x,
+      /src/img/hero-house@2x.png 2x,
+      /src/img/hero-house@3x.png 3x
+    "
+    alt="House"
+    class="hero__house-img"
+  />
+  <svg class="hero__bg-img">
+    <use href="#hero-bg" />
+  </svg>
+  
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          find the place to live <span>your dreams</span> easily here
+        </h1>
+        <p class="hero__text">
+          Everything you need about finding your place to live will be here, where
+          it will be easier for you
+        </p>
+        <form class="form form--complex">
+          <svg class="form--complex__location-icon">
+            <use href="#location-icon" />
+          </svg>
+          <input
+            type="text"
+            class="default-input form--complex__input"
+            placeholder="Search for the location you want!"
+          />
+          <span class="form__error">Field error. Please fix it</span>
+          <button class="button-filled-icon button-filled-icon--right">
+            Search
+            <svg><use href="#button-white-right-icon" /></svg>
+          </button>
+        </form>
+        <div class="hero__partnerships">
+          <p class="hero__text">Our Partnership</p>
+          {% for partner in partners %}
+            <img src="{{ partner.src }}" alt="{{ partner.alt }}" />
+          {% endfor %}
+        </div>
       </div>
+      
     </div>
-    <div class="hero__statistic">
-      <ul>
-        <li class="hero__statistic-item">
-          <div class="hero__statistic-avatar-group">
-            <img
-              class="hero__statistic-avatar"
-              src="./img/hero-avatar-1.jpg"
-              alt="Person 1"
-            />
-            <img
-              class="hero__statistic-avatar"
-              src="./img/hero-avatar-2.jpg"
-              alt="Person 2"
-            />
-            <img
-              class="hero__statistic-avatar"
-              src="./img/hero-avatar-3.jpg"
-              alt="Person 3"
-            />
-          </div>
-          <div class="hero__statistic-content">
-            <p class="hero__statistic-number">1K+ People</p>
-            <span class="hero__statistic-text">Successfully Getting Home</span>
-          </div>
-        </li>
-        <li class="hero__statistic-item">
-          <div class="hero__statistic-image">
-            <img
-              class="hero__statistic-img"
-              src="./img/hero-2.png"
-              alt="Hero image"
-            />
-          </div>
-          <div class="hero__statistic-content">
-            <p class="hero__statistic-number">56 Houses</p>
-            <span class="hero__statistic-text">Sold Monthly</span>
-          </div>
-        </li>
-        <li class="hero__statistic-item">
-          <div class="hero__statistic-avatar-group">
-            <img
-              class="hero__statistic-avatar"
-              src="./img/hero-avatar-4.jpg"
-              alt="Person 4"
-            />
-          </div>
-          <div class="hero__statistic-content">
-            <p class="hero__statistic-number">4k+</p>
-            <span class="hero__statistic-text"
-              >People Looking for New Homes</span
-            >
-          </div>
-        </li>
-      </ul>
-    </div>
+  
+  <div class="hero__statistic">
+    <ul>
+      <li class="hero__statistic-item">
+        <div class="hero__statistic-avatar-group">
+        {% set numbers = [1, 2, 3] %}
+        {% for i in numbers %}
+        <img
+          class="hero__statistic-avatar"
+          src="./img/hero-avatar-{{ i }}.jpg"
+          alt="Person {{ i }}"
+        />
+        {% endfor %}
+        </div>
+        <div class="hero__statistic-content">
+          <p class="hero__statistic-number">1K+ People</p>
+          <span class="hero__statistic-text">Successfully Getting Home</span>
+        </div>
+      </li>
+      <li class="hero__statistic-item">
+        <div class="hero__statistic-image">
+          <img
+            class="hero__statistic-img"
+            src="./img/hero-2.png"
+            alt="Hero image"
+          />
+        </div>
+        <div class="hero__statistic-content">
+          <p class="hero__statistic-number">56 Houses</p>
+          <span class="hero__statistic-text">Sold Monthly</span>
+        </div>
+      </li>
+      <li class="hero__statistic-item">
+        <div class="hero__statistic-avatar-group">
+          <img
+            class="hero__statistic-avatar"
+            src="./img/hero-avatar-4.jpg"
+            alt="Person 4"
+          />
+        </div>
+        <div class="hero__statistic-content">
+          <p class="hero__statistic-number">4k+</p>
+          <span class="hero__statistic-text"
+            >People Looking for New Homes</span
+          >
+        </div>
+      </li>
+    </ul>
   </div>
+  
 </section>

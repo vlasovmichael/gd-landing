@@ -3,8 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "html": "node scripts/build-html.js",
+    "watch:html": "chokidar 'src/templates/**/*.njk' 'src/data/**/*.json' -c 'npm run html'",
+    "dev": "npm run watch:html & vite --host=0.0.0.0",
+    "build": "npm run html && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {

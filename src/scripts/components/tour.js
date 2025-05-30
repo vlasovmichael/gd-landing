@@ -14,7 +14,6 @@ const thumbs = new Splide("#tour-slider-thumbnail", {
   autoHeight: true,
   isNavigation: true,
   gap: 18,
-  focus: "center",
   pagination: false,
   arrows: false,
   cover: true,

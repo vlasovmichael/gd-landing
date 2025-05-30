@@ -8,5 +8,3 @@ safeInit(".js-choice", (select) => {
     shouldSort: false,
   });
 });
-
-// choices.showDropdown();

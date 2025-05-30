@@ -1,21 +1,24 @@
 <section class="subscribe">
   <div class="container">
     <div class="subscribe__bg">
-      <h2>Subscribe For More Info and update from Hounter</h2>
-      <form class="form form--complex">
-        <svg class="form--complex__location-icon">
-          <use href="#icon-email" />
-        </svg>
-        <input
-          type="email"
-          class="default-input form--complex__input"
-          placeholder="Your email here"
-        />
-        <span class="form__error">Field error. Please fix it</span>
-        <button class="button-filled-icon button-filled-icon--right">
-          Subscribe Now
-        </button>
-      </form>
+      <div class="subscribe__inner">
+        <h2>Subscribe For More Info and update from Hounter</h2>
+        <form novalidate class="form form--complex">
+          <svg class="form--complex__location-icon">
+            <use href="#icon-email" />
+          </svg>
+          <input
+            type="email"
+            name="email"
+            class="default-input form__input form--complex__input"
+            placeholder="Your email here"
+          />
+          <span class="form__error">Field error. Please fix it</span>
+          <button class="button-filled-icon button-filled-icon--right">
+            Subscribe Now
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </section>

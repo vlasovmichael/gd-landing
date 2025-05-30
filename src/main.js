@@ -11,3 +11,4 @@ import "./scripts/components/testimonials";
 import "./scripts/components/cookies";
 import "./scripts/components/tour";
 import "./scripts/components/articles";
+import "./scripts/components/mobile-menu";
