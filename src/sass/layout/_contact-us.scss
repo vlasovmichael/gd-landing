@@ -72,17 +72,12 @@
 
   &__row {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 1.75rem;
 
     @include respond(phone) {
       flex-direction: column;
       align-items: flex-start;
-    }
-
-    &:last-child {
-      flex-wrap: nowrap;
     }
 
     &--message {
