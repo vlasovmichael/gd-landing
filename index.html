@@ -5,6 +5,7 @@
     <title>GD Landing</title>
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Put your description here.">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -190,6 +191,7 @@
         <button
           class="button-outline recomendations__tab recomendations__tab--1 recomendations__tab--active"
           data-tab="1"
+          role="button"
         >
           <svg><use href="#tabs-home" /></svg>
           House
@@ -197,6 +199,7 @@
         <button
           class="button-outline recomendations__tab recomendations__tab--2"
           data-tab="2"
+          role="button"
         >
           <svg><use href="#tabs-villa" /></svg>
 
@@ -205,16 +208,17 @@
         <button
           class="button-outline recomendations__tab recomendations__tab--3"
           data-tab="3"
+          role="button"
         >
           <svg><use href="#tabs-apartment" /></svg>
           Apartment
         </button>
       </div>
       <div class="slider-nav">
-        <button class="button-outline-prev slider__btn slider__btn--left">
+        <button aria-label="Prev Button" role="button" class="button-outline-prev slider__btn slider__btn--left">
           <svg><use href="#button-white-left-icon" /></svg>
         </button>
-        <button class="button-outline-next slider__btn slider__btn--right">
+        <button aria-label="Next Button" role="button" class="button-outline-next slider__btn slider__btn--right">
           <svg><use href="#button-white-right-icon" /></svg>
         </button>
       </div>
@@ -1023,10 +1027,10 @@
         <h6 class="author__name">jenny wilson</h6>
         <p class="author__location">manager director</p>
         <div class="author__button">
-          <button class="button-filled-icon button-filled-icon--left">
+          <a href="#contact-us" class="button-filled-icon button-filled-icon--left">
             <svg><use href="#icon-phone" /></svg>
             contact now
-          </button>
+          </a>
         </div>
       </footer>
     </div>
@@ -1387,7 +1391,7 @@
     </div>
   </div>
 </section>
-  <section class="contact-us">
+  <section class="contact-us" id="contact-us">
   <div class="container">
     <div class="contact-us__content contact-us__area">
       <h3>Would you like to join?</h3>
@@ -1511,15 +1515,15 @@
       </p>
       <div class="footer__socials">
         
-        <a href="#" class="footer__icon">
+        <a href="https://www.facebook.com/leaverou/" aria-label="Button facebook" target="_blank" class="footer__icon">
           <svg><use href="#icon-facebook" /></svg>
         </a>
         
-        <a href="#" class="footer__icon">
+        <a href="https://x.com/LeaVerou" aria-label="Button twitter" target="_blank" class="footer__icon">
           <svg><use href="#icon-twitter" /></svg>
         </a>
         
-        <a href="#" class="footer__icon">
+        <a href="https://www.pinterest.com/sarahdrasner/" aria-label="Button pinterest" target="_blank" class="footer__icon">
           <svg><use href="#icon-pinterest" /></svg>
         </a>
         
@@ -1572,13 +1576,13 @@
         <h4>Contact</h4>
         <ul class="footer__list">
           <li class="footer__item">
-            <a href="#" class="footer__link">2464 Royal Ln. Mesa, New Jersey 45463</a>
+            <a href="https://www.google.com/maps?q=2464+Royal+Ln.+Mesa,+New+Jersey+45463" target="_blank" class="footer__link">2464 Royal Ln. Mesa, New Jersey 45463</a>
           </li>
           <li class="footer__item">
-            <a href="tel=6715550110" class="footer__link">(671) 555-0110</a>
+            <a href="tel:+16715550110" class="footer__link">(671) 555-0110</a>
           </li>
           <li class="footer__item">
-            <a href="mailto=info@hounter.com" class="footer__link">info@hounter.com</a>
+            <a href="mailto:info@hounter.com" class="footer__link">info@hounter.com</a>
           </li>
         </ul>
       </nav>
@@ -1594,7 +1598,7 @@
     <div class="cookies">
   <svg class="cookies__icon"><use href="#cookies-icon" /></svg>
   <span>We are using cookies</span>
-  <button class="cookies__button">
+  <button aria-label="Close Button" role="button" class="cookies__button">
     <svg><use href="#button-cookies-close" /></svg>
   </button>
 </div>
